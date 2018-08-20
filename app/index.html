@@ -68,6 +68,7 @@
         
         </div> 
     </header>
+
     <main>
         <section class="top-product">
             <div class="container">
@@ -116,7 +117,7 @@
                         </table>
                     </div>
                 </div>
-                <div class="top-product__2 top-product__slide">
+                <div class="top-product__2 top-product__slide  visually-hidden">
                     <img class="top-product__img" src="img/slide_2.png" alt="Топ-товар">
                     <div class="top-product__details details">
                         <b class="details__lead">Худеем <br>
@@ -136,7 +137,7 @@
                         </table>
                     </div>
                 </div>
-                <div class="top-product__3 top-product__slide">
+                <div class="top-product__3 top-product__slide  visually-hidden">
                     <img class="top-product__img" src="img/slide_3.png" alt="Топ-товар">
                     <div class="top-product__details details">
                         <b class="details__lead">Порхает как бабочка, 
@@ -160,80 +161,123 @@
                 </div>
             </div>
         </section>
+
         <section>
             <div class="container">
                 <h2 class="visually-hidden">Категории товаров</h2>
-                <ul>
-                    <li><a href="">Виртуальная реальность</a></li>
-                    <li><a href="">Моноподы для селфи</a></li>
-                    <li><a href="">Экшн-камеры</a></li>
-                    <li><a href="">Фитнес-браслеты</a></li>
-                    <li><a href="">Умные часы</a></li>
-                    <li><a href="">Квадрокоптеры</a></li>
+                <ul class="goods-list">
+                    <li class="goods-list__item">
+                        <!-- <img src="img/popular-1.svg" alt=""> -->
+                        <a class="goods-list__link goods-list-1" href="">Виртуальная реальность</a>
+                    </li>
+                    <li class="goods-list__item">
+                        <!-- <img src="img/popular-2.svg" alt=""> -->
+                        <a class="goods-list__link goods-list-2" href="">Моноподы для селфи</a>
+                    </li>
+                    <li class="goods-list__item">
+                        <!-- <img src="img/popular-3.svg" alt=""> -->
+                        <a class="goods-list__link goods-list-3"href="">Экшн-камеры</a>
+                    </li>
+                    <li class="goods-list__item">
+                        <!-- <img src="img/popular-4.svg" alt=""> -->
+                        <a class="goods-list__link goods-list-4"href="">Фитнес-браслеты</a>
+                    </li>
+                    <li class="goods-list__item">
+                        <!-- <img src="img/popular-5.svg" alt=""> -->
+                        <a class="goods-list__link goods-list-5"href="">Умные часы</a>
+                    </li>
+                    <li class="goods-list__item">
+                        <!-- <img src="img/popular-5.svg" alt=""> -->
+                        <a class="goods-list__link goods-list-6"href="">Квадрокоптеры</a>
+                    </li>
                 </ul>
             </div>
         </section>
-        <section>
+
+        <section class="services">
             <div class="container">
-                <h2>Услуги</h2>
-                <ul>
-                    <li>
-                        <button type="button"></button>
-                    </li>
-                    <li>
-                        <button type="button"></button>
-                    </li>
-                    <li>
-                        <button type="button"></button>
-                    </li>
-                </ul>
-                <div>
-                    <h3>Доставка</h3>
-                    <p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
-                </div>
-                <div>
-                    <h3>Гарантия</h3>
-                    <p>Если из-за возгорания купленного у нас товара у вас сгорит дом — не переживайте, мы выдадим вам новый.
-                    Товар, не дом, конечно же.</p>
-                </div>
-                <div>
-                    <h3>Кредит</h3>
-                    <p>Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные условия кредита. Выгодные для нашего банка, разумеется.</p>
+                <h2 class="visually-hidden">Услуги</h2>
+                <div class="services__main">
+
+                    <div class="services__list">
+                        <p class="services__item">
+                            <label for="servicesDelivery" class="services__button">
+                                <input class="services__radio" type="radio" name="services__radio" id="servicesDelivery" checked>
+                                <span class="services__indication"></span>
+                                Доставка
+                            </label>
+                        </p>
+                        <p class="services__item">
+                            <label for="servicesGuarantee" class="services__button">
+                                <input class="services__radio" type="radio" name="services__radio" id="servicesGuarantee">
+                                <span class="services__indication"></span>
+                                Гарантия
+                            </label>
+                        </p>
+                        <p class="services__item"> 
+                            <label for="servicesCredit" class="services__button">
+                                <input class="services__radio" type="radio" name="services__radio" id="servicesCredit">
+                                <span class="services__indication"></span>
+                                Кредит
+                            </label>
+                        </p>
+                    </div>
+
+                    <div class="services__description description">
+                        <div class="description__slide description__slide-1">
+                            <h3 class="description__title">Доставка</h3>
+                            <p class="description__text">Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
+                        </div>
+                        <div class="visually-hidden description__slide description__slide-2">
+                            <h3 class="description__title">Гарантия</h3>
+                            <p class="description__text">Если из-за возгорания купленного у нас товара у вас сгорит дом — не переживайте, мы выдадим вам новый.
+                            Товар, не дом, конечно же.</p>
+                        </div>
+                        <div class="visually-hidden description__slide description__slide-3">
+                            <h3 class="description__title">Кредит</h3>
+                            <p class="description__text">Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные условия кредита. Выгодные для нашего банка, разумеется.</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
-        <section>
+
+        <section class="partners">
             <div class="container">
                 <h2 class="visually-hidden">Партнеры</h2>
-                <img src="" alt="DJI">
-                <img src="" alt="SP Gadgets">
-                <img src="" alt="GoPro">
-                <img src="" alt="Vive">
-            </div>
-        </section>
-        <section>
-            <div class="container">
-                <h2>О нас</h2>
-                <p>Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.</p>
-                <p>Мы можем доставить ваш товар в самые отдаленные точки России! DEVICE работает со многими транспортными компаниями:</p>
-
-                <ul>
-                    <li>Деловые Линии</li>
-                    <li>Автотрейдинг</li>
-                    <li>ЖелДорЭкспедиция</li>
+                <ul class="partners__list">
+                    <li class="partners__item"><a class="partners__link" href="#"><img src="/img/logo_1.jpg" alt="DJI"></a></li>
+                    <li class="partners__item"><a class="partners__linkt" href="#"><img src="/img/logo_2.jpg" alt="SP Gadgets"></a></li>
+                    <li class="partners__item"><a class="partners__link" href="#"><img src="/img/logo_3.jpg" alt="GoPro"></a></li>
+                    <li class="partners__item"><a class="partners__link" href="#"><img src="/img/logo_4.jpg" alt="Vive"></a></li>
                 </ul>
-                <p><a href="">Подробнее о нас</a></p>
             </div>
         </section>
-        <section>
-            <div class="container">
-                <h2>Контакты</h2>
-                <p>Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.</p>
-                <img src="" alt="Адрес на карте">
-                <button type="button">Напишите нам</button>
+        
+        <div class="container">
+            <div class="contact-info">
+                <section class="about">  
+                    <h2 class="contact-info__heading">О нас</h2>
+                    <p class="contact-info__text">Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.</p>
+                    <p class="contact-info__text">Мы можем доставить ваш товар в самые отдаленные точки России! DEVICE работает со многими транспортными компаниями:</p>
+                    <ul class="contact-info__trade-list">
+                        <li class="contact-info__trade-item">Деловые Линии</li>
+                        <li class="contact-info__trade-item">Автотрейдинг</li>
+                        <li class="contact-info__trade-item">ЖелДорЭкспедиция</li>
+                    </ul>
+                    <p><a href="">Подробнее о нас</a></p>
+                </section>
+                <section class="contacts">
+                    <h2 class="contact-info__heading">Контакты</h2>
+                    <p class="contact-info__text">Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.</p>
+                    <img class="contact-info__map" src="" alt="Адрес на карте">
+                    <button class="contact-info__button" type="button">Напишите нам</button>
+                </section>
             </div>
-        </section>
+        </div>
+            
     </main>
+    
     <footer>
         <div class="container">
             <div>

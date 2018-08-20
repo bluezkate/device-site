@@ -189,3 +189,99 @@ body {
   .catalog__link {
     text-decoration: none;
     color: #000000; }
+
+.goods-list {
+  margin: 0;
+  padding: 0;
+  padding-top: 200px;
+  list-style-type: none;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap; }
+  .goods-list__item {
+    width: 160px; }
+  .goods-list__link {
+    font-family: Gilroy, serif;
+    font-size: 18px;
+    color: #000000;
+    text-decoration: none; }
+  .goods-list-1 {
+    position: relative; }
+    .goods-list-1::before {
+      content: '';
+      height: 160px;
+      width: 160px;
+      position: absolute;
+      background-color: #f7e296;
+      background-image: url("/img/popular-1.svg");
+      background-repeat: no-repeat;
+      bottom: 80px;
+      background-position: center center; }
+  .goods-list-2 {
+    position: relative; }
+    .goods-list-2::before {
+      content: '';
+      height: 160px;
+      width: 160px;
+      position: absolute;
+      background-color: #f7e296;
+      background-image: url("/img/popular-2.svg");
+      background-repeat: no-repeat;
+      bottom: 80px;
+      background-position: center bottom; }
+  .goods-list-3 {
+    position: relative; }
+    .goods-list-3::before {
+      content: '';
+      height: 160px;
+      width: 160px;
+      position: absolute;
+      background-color: #f7e296;
+      background-image: url("/img/popular-3.svg");
+      background-repeat: no-repeat;
+      bottom: 60px;
+      background-position: center center; }
+  .goods-list-4 {
+    position: relative; }
+    .goods-list-4::before {
+      content: '';
+      height: 160px;
+      width: 160px;
+      position: absolute;
+      background-color: #f7e296;
+      background-image: url("/img/popular-4.svg");
+      background-repeat: no-repeat;
+      bottom: 60px;
+      background-position: center center; }
+  .goods-list-5 {
+    position: relative; }
+    .goods-list-5::before {
+      content: '';
+      height: 160px;
+      width: 160px;
+      position: absolute;
+      background-color: #f7e296;
+      background-image: url("/img/popular-5.svg");
+      background-repeat: no-repeat;
+      bottom: 60px;
+      background-position: center center; }
+  .goods-list-6 {
+    position: relative; }
+    .goods-list-6::before {
+      content: '';
+      height: 160px;
+      width: 160px;
+      position: absolute;
+      background-color: #f7e296;
+      background-image: url("/img/popular-6.svg");
+      background-repeat: no-repeat;
+      bottom: 60px;
+      background-position: center center; }

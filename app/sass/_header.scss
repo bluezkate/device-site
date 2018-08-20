@@ -212,3 +212,136 @@
     }
 
 }
+
+.goods-list {
+    margin: 0;
+    padding: 0;
+    padding-top: 200px;
+    list-style-type: none;
+
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    &__item {
+        width: 160px;
+        
+    }
+
+    &__link {
+
+        font-family: Gilroy, serif;
+        font-size: 18px;
+
+        color: #000000;
+        text-decoration: none;
+    }
+
+
+    &-1 {
+
+        position: relative;
+
+        &::before {
+            content: '';
+            height: 160px;
+            width: 160px;
+            position: absolute;
+            background-color: $bleakYellow;
+            background-image: url('/img/popular-1.svg');
+            background-repeat: no-repeat;
+            bottom: 80px;
+            background-position: center center;
+        }
+
+    }
+
+    &-2 {
+        position: relative;
+
+        &::before {
+            content: '';
+            height: 160px;
+            width: 160px;
+            position: absolute;
+            background-color: $bleakYellow;
+            background-image: url('/img/popular-2.svg');
+            background-repeat: no-repeat;
+            bottom: 80px;
+            background-position: center bottom;
+        }
+    }
+
+    &-3 {
+
+        position: relative;
+
+        &::before {
+            content: '';
+            height: 160px;
+            width: 160px;
+            position: absolute;
+            background-color: $bleakYellow;
+            background-image: url('/img/popular-3.svg');
+            background-repeat: no-repeat;
+            bottom: 60px;
+            background-position: center center;
+        } 
+
+    }
+
+    &-4 {
+
+        position: relative;
+
+        &::before {
+            content: '';
+            height: 160px;
+            width: 160px;
+            position: absolute;
+            background-color: $bleakYellow;
+            background-image: url('/img/popular-4.svg');
+            background-repeat: no-repeat;
+            bottom: 60px;
+            background-position: center center;
+        } 
+
+    }
+
+
+    &-5 {
+
+        position: relative;
+
+        &::before {
+            content: '';
+            height: 160px;
+            width: 160px;
+            position: absolute;
+            background-color: $bleakYellow;
+            background-image: url('/img/popular-5.svg');
+            background-repeat: no-repeat;
+            bottom: 60px;
+            background-position: center center;
+        } 
+    }
+
+    &-6 {
+
+        position: relative;
+
+        &::before {
+            content: '';
+            height: 160px;
+            width: 160px;
+            position: absolute;
+            background-color: $bleakYellow;
+            background-image: url('/img/popular-6.svg');
+            background-repeat: no-repeat;
+            bottom: 60px;
+            background-position: center center;
+        } 
+
+    }
+
+}
