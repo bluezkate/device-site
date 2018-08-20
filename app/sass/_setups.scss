@@ -1,0 +1,38 @@
+$bleakYellow: #f7e296;
+$brightYellow: #f0c52e;
+
+@font-face {
+    font-family: Gilroy;
+    src: url('/fonts/gilroyextrabold.woff2');
+}
+
+@font-face {
+    font-family: GilroyLight;
+    src: url('/fonts/gilroylight.woff2');
+}
+
+@font-face {
+    font-family: OpenSans;
+    src: url('/fonts/opensans.woff2');
+}
+
+body {
+    font-family: OpenSans, sans-serif;
+    font-size: 15px;
+}
+
+.container {
+    width: 1160px;
+    margin: 0 auto;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    border: 0;
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
