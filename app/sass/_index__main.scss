@@ -404,15 +404,19 @@
 
 .partners {
 
+    // &__main {
+       
+    // }
+
     &__list {
         margin: 0;
-        margin-left: 20px;
-        padding: 80px 0;
+        margin-left: 50px;
+        padding: 95px 0 90px 0;
         list-style-type: none;
 
         display: flex;
         align-items: center;
-        justify-content: space-between;
+        justify-content: space-around;
         
     }
 
@@ -431,21 +435,78 @@
 .contact-info {
     display: flex;
     justify-content: space-between;
+    margin-bottom: 85px;
 
     &__heading {
         font-family: Gilroy, serif;
         font-size: 47px;
-        margin: 50px 0;
+        margin: 50px 0 40px 0;
+
+        padding: 0;
     }
 
     &__text {
         line-height: 30px;
         color: #464646;
+        
+        margin: 0;
+        margin-bottom: 30px;
+    }
+
+    &__trade-list {
+        list-style-type: circle;
+        list-style: circle #e5e5e5;
+
+        line-height: 38px;
+
+        padding: 0;
+        padding-left: 20px;
+
+        margin-top: 65px;
+        margin-bottom: 60px;
+    }
+
+    &__trade-item {
+        font-size: 18px;
+        color: #e5e5e5;
+
+    }
+
+    &__trade-text {
+        font-family: Gilroy, serif;
+        font-size: 16px;
+        color: #000000;
+        padding-left: 15px;
+    }
+
+    &__map {
+        margin-top: 10px;
+        margin-bottom: 70px;
+    }
+
+    &__link, &__button {
+
+        display: inline-block;
+
+        width: 260px;
+        padding: 5px 0;
+
+        color: #000000;
+        background-color: $brightYellow;
+
+        font-family: Gilroy, serif;
+        font-size: 18px;
+        text-transform: uppercase;
+        letter-spacing: 3px;
+        text-align: center;
+        text-decoration: none;
+        border: none;
+        
     }
 }
 
 .about {
-    width: 500px;
+    width: 495px;
     position: relative;
 
     &::before {
@@ -461,7 +522,7 @@
 }
 
 .contacts {
-    width: 565px;
+    width: 560px;
     position: relative;
 
     &::before {

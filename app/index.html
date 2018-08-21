@@ -245,12 +245,14 @@
         <section class="partners">
             <div class="container">
                 <h2 class="visually-hidden">Партнеры</h2>
-                <ul class="partners__list">
-                    <li class="partners__item"><a class="partners__link" href="#"><img src="/img/logo_1.jpg" alt="DJI"></a></li>
-                    <li class="partners__item"><a class="partners__linkt" href="#"><img src="/img/logo_2.jpg" alt="SP Gadgets"></a></li>
-                    <li class="partners__item"><a class="partners__link" href="#"><img src="/img/logo_3.jpg" alt="GoPro"></a></li>
-                    <li class="partners__item"><a class="partners__link" href="#"><img src="/img/logo_4.jpg" alt="Vive"></a></li>
-                </ul>
+                <div class="partners__main">
+                    <ul class="partners__list">
+                        <li class="partners__item"><a class="partners__link" href="#"><img src="/img/logo_1.jpg" alt="DJI"></a></li>
+                        <li class="partners__item"><a class="partners__linkt" href="#"><img src="/img/logo_2.jpg" alt="SP Gadgets"></a></li>
+                        <li class="partners__item"><a class="partners__link" href="#"><img src="/img/logo_3.jpg" alt="GoPro"></a></li>
+                        <li class="partners__item"><a class="partners__link" href="#"><img src="/img/logo_4.jpg" alt="Vive"></a></li>
+                    </ul>
+                </div>
             </div>
         </section>
         
@@ -261,16 +263,19 @@
                     <p class="contact-info__text">Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.</p>
                     <p class="contact-info__text">Мы можем доставить ваш товар в самые отдаленные точки России! DEVICE работает со многими транспортными компаниями:</p>
                     <ul class="contact-info__trade-list">
-                        <li class="contact-info__trade-item">Деловые Линии</li>
-                        <li class="contact-info__trade-item">Автотрейдинг</li>
-                        <li class="contact-info__trade-item">ЖелДорЭкспедиция</li>
+                        <li class="contact-info__trade-item"><span class="contact-info__trade-text">Деловые Линии</span>
+                            </li>
+                        <li class="contact-info__trade-item"><span class="contact-info__trade-text">Автотрейдинг</span>
+                            </li>
+                        <li class="contact-info__trade-item"><span class="contact-info__trade-text">ЖелДорЭкспедиция</span>
+                            </li>
                     </ul>
-                    <p><a href="">Подробнее о нас</a></p>
+                    <p><a class="contact-info__link" href="">Подробнее о нас</a></p>
                 </section>
                 <section class="contacts">
                     <h2 class="contact-info__heading">Контакты</h2>
                     <p class="contact-info__text">Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.</p>
-                    <img class="contact-info__map" src="" alt="Адрес на карте">
+                    <img class="contact-info__map" src="img/map__mini.jpg" alt="Адрес на карте">
                     <button class="contact-info__button" type="button">Напишите нам</button>
                 </section>
             </div>
@@ -278,28 +283,31 @@
             
     </main>
     
-    <footer>
+    <footer class="footer">
         <div class="container">
-            <div>
-                <img src="" alt="DEVICE">
-                <button type="button">Войти</button>
-                <p><a href="">Сравнить</a></p>
-                <p><a href="">Корзина</a></p>
+            <div class="footer__row_1">
+                <b class="footer__logo">Device</b>
+                <div class="footer__user-option">
+                    <button class="footer__login" type="button">Войти</button>
+                    <p class="footer__compare"><a class="footer__compare-link" href="#">Сравнить</a></p>
+                    <p class="footer__cart"><a  class="footer__cart-link" href="#">Корзина</a></p>
+                </div>
+                
             </div>
-            <div>
-                <p>г. Москва, ул. Строителей, 15</p>
-                <ul>
-                    <li><a href=""></a>Доставка</li>
-                    <li><a href=""></a>Гарантия</li>
-                    <li><a href=""></a>Контакты</li>
+            <div class="footer__row_2">
+                <p class="footer__adress">г. Москва, ул. Строителей, 15</p>
+                <ul class="footer__services">
+                    <li class="footer__services-item"><a class="footer__services-link" href="#">Доставка</a></li>
+                    <li class="footer__services-item"><a class="footer__services-link" href="#">Гарантия</a></li>
+                    <li class="footer__services-item"><a class="footer__services-link" href="#">Контакты</a></li>
                 </ul>
-                <p>Тел.: +7 (495) 495-95-95</p>
+                <p class="footer__phone">Тел.: +7 (495) 495-95-95</p>
             </div>
-            <div>
-                <ul>
-                    <li><a href="">Фейсбук</a></li>
-                    <li><a href="">Инстаграм</a></li>
-                    <li><a href="">Твиттер</a></li>
+            <div class="footer__row_3">
+                <ul class="footer__social social">
+                    <li class="social__item"><a class="social__link social__facebook" href="#"><span class="visually-hidden">Фейсбук</span></a></li>
+                    <li class="social__item"><a class="social__link social__instagram" href="#"><span class="visually-hidden">Инстаграм</span></a></li>
+                    <li class="social__item"><a class="social__link social__twitter" href="#"><span class="visually-hidden">Твиттер</span></a></li>
                 </ul>
             </div>
         </div>
