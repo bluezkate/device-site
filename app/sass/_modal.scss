@@ -1,0 +1,129 @@
+.modal{
+    position: fixed;
+    z-index: 10;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); 
+    box-shadow: 0px 5px 30px 2px rgba(0,0,0,0.75);
+}
+
+.write-us {
+
+    width: 960px;
+    box-sizing: border-box;
+    
+    padding: 80px 100px;
+    
+    background-color: #ffffff;
+
+    &__personal-data {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 35px;
+    }
+
+    &__field {
+        margin: 0;  
+    }
+
+    &__label, &__input, &__text-area {
+        display: block;
+    }
+
+    &__label {
+        font-family: Gilroy, serif;
+        font-size: 18px;
+        padding-bottom: 10px;
+    }
+
+    &__input {
+        width: 360px;
+
+        box-sizing: border-box;
+        padding: 20px;
+
+        font: inherit;
+
+        background-color: #f2f2f2;
+        border: none;
+
+        &::placeholder {
+            font-size: 14px;
+            color: #464646
+        }
+    }
+
+    &__text-area {
+        width: 760px;
+
+        box-sizing: border-box;
+        padding: 20px;
+        margin-bottom: 50px;
+
+        font: inherit;
+
+        background-color: #f2f2f2;
+        border: none;
+
+        resize: none;
+
+        &::placeholder {
+            font-size: 14px;
+            color: #464646
+        }
+    }
+
+    &__send {
+        display: inline-block;
+        width: 200px;
+        padding: 10px 0;
+
+        background-color: $brightYellow;
+        border: none;
+
+        font-family: Gilroy, serif;
+        font-size: 18px;
+        text-transform: uppercase;
+        letter-spacing: 3px;
+    }
+
+    &:after {
+        content: '';
+        width: 55px;
+        height: 55px;
+        position: absolute;
+        top: 23px;
+        right: 23px;
+        opacity: 0.6;
+
+        cursor: pointer;
+
+        background-image: url('/img/modal-close.svg');
+
+        // &:hover {
+        //     opacity: 1;
+        // }
+    }
+}
+
+.map__full {
+    
+    &:after {
+        content: '';
+        width: 55px;
+        height: 55px;
+        position: absolute;
+        top: 23px;
+        right: 23px;
+        opacity: 0.6;
+
+        cursor: pointer;
+
+        background-image: url('/img/modal-close.svg');
+
+        // &:hover {
+        //     opacity: 1;
+        // }
+    }
+
+}

@@ -1,6 +1,6 @@
 .footer{
     background-color: #464646;
-    padding: 60px 0;
+    padding: 41px 0;
 }
 
 .footer__row_1, .footer__row_2, .footer__row_3 {
@@ -9,21 +9,34 @@
 }
 
 .footer__row_1 {
-    padding-bottom: 35px;
+    padding-bottom: 11px;
 }
 
 .footer__logo {
     font-family: Gilroy, serif;
     font-size: 48px;
     text-transform: uppercase;
+    text-decoration: none;
     color: $brightYellow;
+
+    margin: 0;
+    padding: 0;
+
+    &:hover {
+        opacity: 0.6;
+    }
+
+    &:focus {
+        opacity: 0.3;
+    }
 }
 
 .footer__user-option {
     display: flex;
     justify-content: space-between;
-    width: 325px;
-    align-items: center;
+    width: 305px;
+    align-items: baseline;
+    padding-top: 27px;
 
 }
 
@@ -35,6 +48,16 @@
     cursor: pointer;
     position: relative;
 
+    opacity: 0.7;
+
+    &:hover {
+        opacity: 1;
+    }
+
+    &:focus {
+        opacity: 0.3;
+    }
+
     &::before {
         content: '';
         width: 13px;
@@ -45,7 +68,17 @@
         position: absolute;
         right: 65px;
         top: 4px;
+        opacity: 1;
+
+        // &:hover {
+        //     opacity: 0.6;
+        // }
+    
+        // &:focus {
+        //     opacity: 0.3;
+        // }
     }
+
 }
 
 .footer__compare {
@@ -57,6 +90,7 @@
         color: #ffffff;
         text-decoration: none;
         position: relative;
+        opacity: 0.7;
 
         &::before {
             content: '';
@@ -68,9 +102,26 @@
             position: absolute;
             right: 82px;
             top: 5px;
+
+            // &:hover {
+            //     opacity: 0.7;
+            // }
+        
+            // &:focus {
+            //     opacity: 0.3;
+            // }
+        }
+
+        &:hover {
+            opacity: 1;
+        }
+
+        &:focus {
+            opacity: 0.3;
         }
 
     }
+
 }
 
 .footer__cart {
@@ -82,6 +133,7 @@
         color: #ffffff;
         text-decoration: none;
         position: relative;
+        opacity: 0.7;
 
         &::before {
             content: '';
@@ -93,24 +145,46 @@
             position: absolute;
             right: 75px;
             top: 5px;
+            opacity: 1;
+
+            // &:hover {
+            //     opacity: 0.7;
+            // }
+        
+            // &:focus {
+            //     opacity: 0.3;
+            // }
+        }
+
+        &:hover {
+        opacity: 1;
+        }
+
+        &:focus {
+            opacity: 0.3;
         }
 
     }
+
+ 
+
 }
 
 .footer__row_2 {
-    padding-bottom: 60px;
+    padding-bottom: 68px;
 }
 
 .footer__adress, .footer__phone {
     margin: 0;
     color: #ffffff;
+
 }
 
 .footer__services {
 
     margin: 0;
     padding: 0;
+    padding-right: 43px;
 
     display: flex;
     justify-content: space-between;
@@ -119,19 +193,30 @@
     font-family: Gilroy, serif;
     font-size: 18px;
     text-transform: uppercase;
-    letter-spacing: 3px;
+    letter-spacing: 4px;
 
     list-style-type: none;
 
     &-link {
         color: #ffffff;
         text-decoration: none;
+
+         &:hover {
+            opacity: 0.6;
+        }
+
+        &:focus {
+            opacity: 0.3;
+        }
     }
+
+   
+    
 }
 
 .footer__row_3 {
     justify-content: center;
-    margin-bottom: 30px;
+    padding-bottom: 60px;
     position: relative;
 
     &::before {
@@ -154,22 +239,30 @@
         background-repeat: no-repeat;
         position: absolute;
         right: 0;
+        top: -2px;
     }
 }
 
 .social {
     display: flex;
     justify-content: space-between;
-    width: 140px;
+
+    width: 110px;
 
     list-style-type: none;
-    opacity: 0.3;
     padding: 0;
+    padding-right: 33px;
     margin: 0;
+
+    &:focus + &__facebook::before {
+        outline: thin dotted;
+        outline: 5px auto -webkit-focus-ring-color;
+    }
 
 
     &__facebook {
         position: relative;
+        opacity: 0.3;
 
         &::before {
             content: '';
@@ -179,10 +272,19 @@
 
             background-image: url('/img/fb.svg');
         }
+
+        &:hover {
+            opacity: 0.6;
+        }
+
+        &:focus {
+            opacity: 0.1;
+        }
     }
 
     &__instagram {
         position: relative;
+        opacity: 0.3;
 
         &::before {
             content: '';
@@ -192,10 +294,19 @@
 
             background-image: url('/img/insta.png');
         }
+
+        &:hover {
+            opacity: 0.6;
+        }
+
+        &:focus {
+            opacity: 0.1;
+        }
     }
 
     &__twitter {
         position: relative;
+        opacity: 0.3;
 
         &::before {
             content: '';
@@ -204,6 +315,14 @@
             position: absolute;
 
             background-image: url('/img/twitter.svg');
+        }
+
+        &:hover {
+            opacity: 0.6;
+        }
+
+        &:focus {
+            opacity: 0.1;
         }
     }
 }

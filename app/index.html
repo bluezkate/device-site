@@ -172,7 +172,7 @@
                     </li>
                     <li class="goods-list__item">
                         <!-- <img src="img/popular-2.svg" alt=""> -->
-                        <a class="goods-list__link goods-list-2" href="">Моноподы для селфи</a>
+                        <a class="goods-list__link goods-list-2" href="">Моноподы <br> для селфи</a>
                     </li>
                     <li class="goods-list__item">
                         <!-- <img src="img/popular-3.svg" alt=""> -->
@@ -198,7 +198,6 @@
             <div class="container">
                 <h2 class="visually-hidden">Услуги</h2>
                 <div class="services__main">
-
                     <div class="services__list">
                         <p class="services__item">
                             <label for="servicesDelivery" class="services__button">
@@ -282,15 +281,53 @@
         </div>
             
     </main>
+
+    <section class="modal">
+        <form class="write-us visually-hidden">
+            <div class="write-us__personal-data">
+                <p class="write-us__field"> 
+                    <label class="write-us__label"
+                    for="modalName">
+                    Ваше имя:</label>
+                    <input class="write-us__input" id="modalName" type="text" placeholder="Имя Фамилия">
+                </p>
+                <p class="write-us__field">
+                    <label class="write-us__label" for="modalEmail">Ваш e-mail:</label>
+                    <input class="write-us__input" id="modalEmail" type="email" placeholder="email@example.com">
+                </p>
+            </div>
+            
+            <div class="write-us__message">
+                <label class="write-us__label" for="modalMessage">Текст письма:</label>
+                <textarea name="" class="write-us__text-area" id="modalMessage" cols="30" rows="7" placeholder="В свободной форме"></textarea>
+            </div>
+            <button class="write-us__send" type="button">Отправить</button>
+        </form>
+        <div class="map__full visually-hidden">
+            <img src="img/map__full.jpg" alt="Большая карта">
+        </div>
+    </section>
     
     <footer class="footer">
         <div class="container">
             <div class="footer__row_1">
-                <b class="footer__logo">Device</b>
+                <p>
+                    <a class="footer__logo" href="index.html">
+                        <b class="footer__logo-text">Device</b>
+                    </a>
+                </p>
                 <div class="footer__user-option">
-                    <button class="footer__login" type="button">Войти</button>
-                    <p class="footer__compare"><a class="footer__compare-link" href="#">Сравнить</a></p>
-                    <p class="footer__cart"><a  class="footer__cart-link" href="#">Корзина</a></p>
+                    <button class="footer__login" type="button"> <span class="footer__login-text">Войти</span> </button>
+                    <p class="footer__compare">
+                        <a class="footer__compare-link" href="#">
+                            <span class="footer__compare-text">Сравнить</span>
+                        </a>
+                    </p>
+                    <p class="footer__cart">
+                        <a  class="footer__cart-link" href="#">
+                            <span class="footer__cart-text">Корзина</span>
+                        </a>
+                    </p>
                 </div>
                 
             </div>
@@ -311,6 +348,7 @@
                 </ul>
             </div>
         </div>
-    </footer>    
+    </footer>
+    
 </body>
 </html>

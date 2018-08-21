@@ -1,6 +1,6 @@
 .top-product {
     position: relative;
-    bottom: 100px;
+    bottom: 110px;
 
     &__1 {
         &::after {
@@ -9,8 +9,8 @@
             font-size: 180px;
             color: #ffffff;
             position: absolute;
-            right: 0;
-            top: -40px;
+            right: -12px;
+            top: -28px;
         }
     }
 
@@ -41,7 +41,7 @@
 .top-product__slide {
     display: flex;
     justify-content: space-between;
-    margin: 0 60px 0 30px;
+    margin: 0 61px 0 17px;
     position: relative;
 
     &::before {
@@ -51,19 +51,22 @@
         background-color: #ffffff;
         position: absolute;
         z-index: 1;
-        right: 397px;
-        top: 35px;
+        right: 399px;
+        top: 37px;
     }
 
 }
 
+
+// Absolutely positioned slider switcher
 .slider{
 
-    width: 500px;
+    width: 485px;
+    padding-right: 15px;
 
     position: absolute;
-    right: 0;
-    bottom: 140px;
+    right: -1px;
+    bottom: 129px;
 
     display: flex;
     justify-content: space-between;
@@ -78,7 +81,7 @@
             font-family: Gilroy, serif;
             text-transform: uppercase;
             font-size: 18px;
-            letter-spacing: 5px;
+            letter-spacing: 3px;
 
             color: #000000;
             text-decoration: none; 
@@ -94,20 +97,20 @@
 
     &__button {
         margin-right: 20px;
-        padding-left: 15px;
+        padding-left: 13px;
 
         position: relative;
         cursor: pointer;
     }
 
-
-
 }
 
+
+// Switching standart radio to new
 .slider__radio + .radio-indication {
     position: absolute;
-    width: 12px;
-    height: 12px;
+    width: 10px;
+    height: 10px;
 
     border: 1px solid #000000;
     border-radius: 10px; 
@@ -123,13 +126,15 @@
 .slider__radio:checked + .radio-indication::before {
     content: '';
     position: absolute;
-    width: 4px;
-    height: 4px;
+    width: 2px;
+    height: 2px;
     border: 1px solid #000000;
     border-radius: 10px;
     left: 3px;
     top: 3px;
 }
+
+
 
 .top-product__img {
     width: 530px;
@@ -145,20 +150,24 @@
 
 .details {
     width: 500px;
-    padding-top: 70px;
+    padding-top: 80px;
 
     &__lead{
+        display: block;
+        margin-bottom: 19px;
+
         font-family: Gilroy, serif;
         font-size: 47px;
-        line-height: 55px;
+        line-height: 55px; 
+        letter-spacing: 1px; 
     }
 
     &__ad {
 
-        margin-bottom: 120px; 
+        margin-bottom: 134px; 
 
         color: #464646;
-        line-height: 25px;
+        line-height: 30px;
         font-weight: lighter;  
     }
 
@@ -168,16 +177,22 @@
     
     width: 500px;
     text-align: left;
+    display: inline-block;
     
     &__head {
         font-size: 13px;
         font-weight: 300;
-        padding-right: 80px;
+
+        margin: 0;
+        padding: 0;
+        padding-right: 74px;
+        padding-top: 10px;
     }
 
     &__value {
         font-family: GilroyLight, serif;
         font-size: 36px;
+        
     }
 
 }
@@ -186,9 +201,9 @@
 
 .goods-list {
     margin: 0;
-    margin-bottom: 80px;
+    margin-bottom: 81px;
     padding: 0;
-    padding-top: 200px;
+    padding-top: 186px;
     list-style-type: none;
 
     display: flex;
@@ -203,6 +218,7 @@
 
         font-family: Gilroy, serif;
         font-size: 18px;
+        line-height: 24px;
 
         color: #000000;
         text-decoration: none;
@@ -239,7 +255,7 @@
             background-image: url('/img/popular-2.svg');
             background-repeat: no-repeat;
             bottom: 80px;
-            background-position: center bottom;
+            background-position: center 41px;
         }
     }
 
@@ -255,8 +271,8 @@
             background-color: $bleakYellow;
             background-image: url('/img/popular-3.svg');
             background-repeat: no-repeat;
-            bottom: 60px;
-            background-position: center center;
+            bottom: 55px;
+            background-position: 50px center;
         } 
 
     }
@@ -273,8 +289,8 @@
             background-color: $bleakYellow;
             background-image: url('/img/popular-4.svg');
             background-repeat: no-repeat;
-            bottom: 60px;
-            background-position: center center;
+            bottom: 55px;
+            background-position: 28px center;
         } 
 
     }
@@ -292,8 +308,8 @@
             background-color: $bleakYellow;
             background-image: url('/img/popular-5.svg');
             background-repeat: no-repeat;
-            bottom: 60px;
-            background-position: center center;
+            bottom: 55px;
+            background-position: 55px center;
         } 
     }
 
@@ -309,8 +325,8 @@
             background-color: $bleakYellow;
             background-image: url('/img/popular-6.svg');
             background-repeat: no-repeat;
-            bottom: 60px;
-            background-position: center center;
+            bottom: 55px;
+            background-position: 13px 48px;
         } 
 
     }
@@ -319,8 +335,8 @@
 
 .services {
 
-    background-color: #e5e5e5;
-    padding-bottom: 65px; 
+    background-image: linear-gradient(to top, #e5e5e5 74%, rgba(255, 255, 255, 0) 74%, rgba(255, 255, 255, 0) 100%, #e5e5e5 100%);
+    padding-bottom: 70px; 
 
     &__main {
         display: flex;
@@ -329,7 +345,7 @@
 
     &__list {
         margin: 0;
-        padding: 60px 0 50px;
+        padding: 80px 0 44px;
 
         width: 285px;
         box-sizing: border-box;
@@ -338,7 +354,8 @@
     }
 
     &__item {
-        margin: 25px 0;
+        margin: 0;
+        margin-bottom: 25px;
 
         font-family: Gilroy, serif;
         font-size: 18px;
@@ -348,7 +365,7 @@
     &__button {
         display: inline-block;
         width: 160px;
-        padding: 8px;
+        padding: 10px;
         background-color: $brightYellow;
         text-transform: uppercase;
         text-align: center;
@@ -366,7 +383,7 @@
 
 .description {
     width: 760px;
-    padding-top: 80px;
+    padding-top: 70px;
 
     &__title {
         
@@ -378,7 +395,10 @@
     }
 
     &__text {
-        width: 500px;
+        margin: 0;
+        margin-top: 28px;
+
+        width: 430px;
         line-height: 30px;
         color: #464646;
     }
@@ -394,8 +414,8 @@
             width: 136px;
 
             position: absolute;
-            top: 0;
-            right: 60px;
+            top: 15px;
+            right: 65px;
         }
         
     }
@@ -404,14 +424,11 @@
 
 .partners {
 
-    // &__main {
-       
-    // }
 
     &__list {
         margin: 0;
         margin-left: 50px;
-        padding: 95px 0 90px 0;
+        padding: 93px 0 90px 0;
         list-style-type: none;
 
         display: flex;
@@ -435,22 +452,23 @@
 .contact-info {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 85px;
+    margin-bottom: 72px;
 
     &__heading {
+        margin: 49px 0 40px 0;
+        padding: 0;
+
         font-family: Gilroy, serif;
         font-size: 47px;
-        margin: 50px 0 40px 0;
-
-        padding: 0;
     }
 
     &__text {
-        line-height: 30px;
-        color: #464646;
-        
         margin: 0;
         margin-bottom: 30px;
+
+        line-height: 30px;
+        color: #464646;
+
     }
 
     &__trade-list {
@@ -489,7 +507,7 @@
         display: inline-block;
 
         width: 260px;
-        padding: 5px 0;
+        padding: 10px 0;
 
         color: #000000;
         background-color: $brightYellow;
