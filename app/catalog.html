@@ -11,13 +11,13 @@
 <body>
     <header class="header">
         <div class="container">
-            <section class="header__logo"> 
-                <a class="header__logo_link" href="index.html">
-                    <h1 class="header__logo_text">Device</h1>
-                </a>
-            </section>
-            <!-- p в обертке лого почему-то выдает лишние неизменяемые без теговых стилей маргины, пришлось заменить на section -->
+            <!-- p в обертке лого почему-то выдает лишние неизменяемые без теговых стилей маргины, пришлось заменить на div -->
             <section class="header__main">
+                <div class="header__logo">
+                    <a class="header__logo_link" href="index.html">
+                        <h1 class="header__logo_text">Device</h1>
+                    </a>
+                </div>
                 <div class="header__user-option">
                     <ul class="header__user-option_list user-option">
                         <li class="user-option__search">
@@ -88,7 +88,7 @@
 
                         <div class="filter__price">
                             <b class="filter__type">Стоимость</b>
-                            <p>
+                            <p class="filter__range">
                                 <label for="filterPrice">
                                     <input id="filterPrice" type="range">
                                 </label>  
@@ -185,7 +185,7 @@
                         <div class="sort__item">
                             <img class="sort__item-img" src="img/item_2.jpg" alt="">
                             <p class="sort__item-description">
-                                <span class="sort__item-name">Профессиональная <br> селфи-палка</span>
+                                <span class="sort__item-name">Профессиональная селфи&#8209палка</span>
                                 <span class="sort__item-price">1 500 руб.</span>   
                             </p>
                         </div>
@@ -199,7 +199,7 @@
                         <div class="sort__item">
                             <img class="sort__item-img" src="img/item_4.jpg" alt="">
                             <p class="sort__item-description">
-                                <span class="sort__item-name">Селфи-палка "Следуй за мной"</span>
+                                <span class="sort__item-name">Селфи-палка &#171;Следуй за мной&#187;</span>
                                 <span class="sort__item-price">4 900 руб.</span>   
                             </p> 
                         </div>

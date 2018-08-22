@@ -1,20 +1,14 @@
 .header {
-    position: relative;
     margin: 0;  
 }
 
 .header__main {
-    background-color: $bleakYellow;
-    clip-path: polygon(0 12%, 100% 12%, 100% 100%, 0% 100%);
-    padding-top: 60px;
-    padding-bottom: 120px;
-
-    position: relative;
+    background: linear-gradient(to top, $bleakYellow 83%, rgba(255, 255, 255, 0) 83%, rgba(255, 255, 255, 0) 100%, $bleakYellow 100%);
+    padding-bottom: 7px;
 
 }
 
 .header__logo {
-    position: relative;
 
     &_link {
         text-decoration: none;
@@ -25,11 +19,8 @@
     &_text {
         margin: 0;
         padding: 0;
-
-        position: absolute;
-        top: 12px;
-        left: 59px;
-        z-index: 1;
+        padding-top: 13px;
+        padding-left: 57px;
 
         font-family: Gilroy, serif;
         font-size: 48px;
@@ -41,7 +32,7 @@
 }
 
 .header__user-option {
-    padding: 14px 60px 31px 60px;
+    padding: 5px 60px 31px 60px;
 }
 
 .user-option {

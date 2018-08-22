@@ -1,6 +1,6 @@
 .top-product {
     position: relative;
-    bottom: 110px;
+    margin-bottom: 108px;
 
     &__1 {
         &::after {
@@ -9,8 +9,8 @@
             font-size: 180px;
             color: #ffffff;
             position: absolute;
-            right: -12px;
-            top: -28px;
+            right: 49px;
+            top: -25px;
         }
     }
 
@@ -41,8 +41,10 @@
 .top-product__slide {
     display: flex;
     justify-content: space-between;
-    margin: 0 61px 0 17px;
+    padding: 3px 61px 0 17px;
     position: relative;
+
+    background: linear-gradient(to bottom, $bleakYellow 24%, rgba(255, 255, 255, 0) 24%, rgba(255, 255, 255, 0) 100%, $bleakYellow 100%);
 
     &::before {
         content: '';
@@ -51,8 +53,8 @@
         background-color: #ffffff;
         position: absolute;
         z-index: 1;
-        right: 399px;
-        top: 37px;
+        right: 459px;
+        top: 40px;
     }
 
 }
@@ -65,17 +67,19 @@
     padding-right: 15px;
 
     position: absolute;
-    right: -1px;
-    bottom: 129px;
+    right: 60px;
+    bottom: 133px;
 
     display: flex;
     justify-content: space-between;
 
     &__link {
 
+        margin: 0;
         width: 220px;
         text-align: center;
         background-color: $brightYellow;
+        padding: 10px 0;
 
         &_text{
             font-family: Gilroy, serif;
@@ -452,7 +456,7 @@
 .contact-info {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 72px;
+    margin-bottom: 67px;
 
     &__heading {
         margin: 49px 0 40px 0;
@@ -481,13 +485,12 @@
         padding-left: 20px;
 
         margin-top: 65px;
-        margin-bottom: 60px;
+        margin-bottom: 55px;
     }
 
     &__trade-item {
         font-size: 18px;
         color: #e5e5e5;
-
     }
 
     &__trade-text {
@@ -499,7 +502,7 @@
 
     &__map {
         margin-top: 10px;
-        margin-bottom: 70px;
+        margin-bottom: 65px;
     }
 
     &__link, &__button {

@@ -29,36 +29,31 @@ body {
   overflow: hidden; }
 
 .header {
-  position: relative;
   margin: 0; }
 
 .header__main {
-  background-color: #f7e296;
-  -webkit-clip-path: polygon(0 12%, 100% 12%, 100% 100%, 0% 100%);
-          clip-path: polygon(0 12%, 100% 12%, 100% 100%, 0% 100%);
-  padding-top: 60px;
-  padding-bottom: 120px;
-  position: relative; }
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(83%, #f7e296), color-stop(83%, rgba(255, 255, 255, 0)), color-stop(100%, rgba(255, 255, 255, 0)), to(#f7e296));
+  background: -webkit-linear-gradient(bottom, #f7e296 83%, rgba(255, 255, 255, 0) 83%, rgba(255, 255, 255, 0) 100%, #f7e296 100%);
+  background: -o-linear-gradient(bottom, #f7e296 83%, rgba(255, 255, 255, 0) 83%, rgba(255, 255, 255, 0) 100%, #f7e296 100%);
+  background: linear-gradient(to top, #f7e296 83%, rgba(255, 255, 255, 0) 83%, rgba(255, 255, 255, 0) 100%, #f7e296 100%);
+  padding-bottom: 7px; }
 
-.header__logo {
-  position: relative; }
-  .header__logo_link {
-    text-decoration: none;
-    color: #000000; }
-  .header__logo_text {
-    margin: 0;
-    padding: 0;
-    position: absolute;
-    top: 12px;
-    left: 59px;
-    z-index: 1;
-    font-family: Gilroy, serif;
-    font-size: 48px;
-    font-weight: bold;
-    text-transform: uppercase; }
+.header__logo_link {
+  text-decoration: none;
+  color: #000000; }
+
+.header__logo_text {
+  margin: 0;
+  padding: 0;
+  padding-top: 13px;
+  padding-left: 57px;
+  font-family: Gilroy, serif;
+  font-size: 48px;
+  font-weight: bold;
+  text-transform: uppercase; }
 
 .header__user-option {
-  padding: 14px 60px 31px 60px; }
+  padding: 5px 60px 31px 60px; }
 
 .user-option {
   padding: 0;
@@ -288,15 +283,15 @@ body {
 
 .top-product {
   position: relative;
-  bottom: 110px; }
+  margin-bottom: 108px; }
   .top-product__1::after {
     content: '01';
     font-family: Gilroy, serif;
     font-size: 180px;
     color: #ffffff;
     position: absolute;
-    right: -12px;
-    top: -28px; }
+    right: 49px;
+    top: -25px; }
   .top-product__2::after {
     content: '02';
     font-family: Gilroy, serif;
@@ -321,8 +316,12 @@ body {
   -webkit-justify-content: space-between;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  margin: 0 61px 0 17px;
-  position: relative; }
+  padding: 3px 61px 0 17px;
+  position: relative;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(24%, #f7e296), color-stop(24%, rgba(255, 255, 255, 0)), color-stop(100%, rgba(255, 255, 255, 0)), to(#f7e296));
+  background: -webkit-linear-gradient(top, #f7e296 24%, rgba(255, 255, 255, 0) 24%, rgba(255, 255, 255, 0) 100%, #f7e296 100%);
+  background: -o-linear-gradient(top, #f7e296 24%, rgba(255, 255, 255, 0) 24%, rgba(255, 255, 255, 0) 100%, #f7e296 100%);
+  background: linear-gradient(to bottom, #f7e296 24%, rgba(255, 255, 255, 0) 24%, rgba(255, 255, 255, 0) 100%, #f7e296 100%); }
   .top-product__slide::before {
     content: '';
     width: 100px;
@@ -330,15 +329,15 @@ body {
     background-color: #ffffff;
     position: absolute;
     z-index: 1;
-    right: 399px;
-    top: 37px; }
+    right: 459px;
+    top: 40px; }
 
 .slider {
   width: 485px;
   padding-right: 15px;
   position: absolute;
-  right: -1px;
-  bottom: 129px;
+  right: 60px;
+  bottom: 133px;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -348,9 +347,11 @@ body {
       -ms-flex-pack: justify;
           justify-content: space-between; }
   .slider__link {
+    margin: 0;
     width: 220px;
     text-align: center;
-    background-color: #f0c52e; }
+    background-color: #f0c52e;
+    padding: 10px 0; }
     .slider__link_text {
       font-family: Gilroy, serif;
       text-transform: uppercase;
@@ -637,7 +638,7 @@ body {
   -webkit-justify-content: space-between;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  margin-bottom: 72px; }
+  margin-bottom: 67px; }
   .contact-info__heading {
     margin: 49px 0 40px 0;
     padding: 0;
@@ -655,7 +656,7 @@ body {
     padding: 0;
     padding-left: 20px;
     margin-top: 65px;
-    margin-bottom: 60px; }
+    margin-bottom: 55px; }
   .contact-info__trade-item {
     font-size: 18px;
     color: #e5e5e5; }
@@ -666,7 +667,7 @@ body {
     padding-left: 15px; }
   .contact-info__map {
     margin-top: 10px;
-    margin-bottom: 70px; }
+    margin-bottom: 65px; }
   .contact-info__link, .contact-info__button {
     display: inline-block;
     width: 260px;

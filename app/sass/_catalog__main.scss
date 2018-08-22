@@ -16,13 +16,13 @@
 
 .main__title {
 
-    margin: 40px 60px;
+    margin: 40px 60px 50px 60px;
 
 }
 
 .main__heading {
     margin: 0;
-    margin-bottom: 25px;
+    margin-bottom: 24px;
     padding: 0;
 
     font-family: Gilroy, serif;
@@ -78,7 +78,7 @@
     display: flex;
     justify-content: space-between;
 
-    margin-left: 60px;
+    margin-left: 58px;
 }
 
 .filter{
@@ -87,18 +87,30 @@
     &__type {
         font-family: Gilroy, serif;
         font-size: 18px;
-        padding: 15px 0;
+        padding: 0;
+        padding-top: 12px;
+        padding-bottom: 28px;
 
         display: block;
     }
 
+    &__range {
+        margin: 0;
+    }
+
      &__price, &__color, &__bluetooth {
-        padding-bottom: 40px;
+        padding-bottom: 54px;
         border-top: 2px  solid #000000;
     }
 
+    &__color {
+        padding-bottom: 21px;
+    }
+
     &__checkbox {
-        margin: 25px 0;
+        margin: 0;
+        margin-top: 2px;
+        margin-bottom: 23px;
 
         &-label {
             padding-left: 40px;
@@ -107,7 +119,15 @@
         }
     }
 
+    &__bluetooth {
+        padding-bottom: 17px;
+    }
+
     &__radio {
+
+        margin: 0;
+        margin-bottom: 25px;
+
         &-label {
             padding-left: 40px;
             position: relative;
@@ -127,7 +147,7 @@
 
             font-family: Gilroy, serif;
             font-size: 18px;
-            letter-spacing: 2px;
+            letter-spacing: 3px;
 
             text-decoration: none;
             text-transform: uppercase;
@@ -147,7 +167,7 @@
     letter-spacing: 2px;
     padding: 25px 0;
     margin: 0;
-    margin-bottom: 70px;
+    margin-bottom: 69px;
 }
 
 
@@ -223,11 +243,11 @@
 
 .sort__top {
     display: flex;
-    margin-bottom: 40px;
+    margin-bottom: 69px;
 
     &-heading {
         margin: 0;
-        margin-right: 50px;
+        margin-right: 55px;
     }
 
     &-type {
@@ -235,6 +255,7 @@
 
         margin: 0;
         padding: 0;
+        padding-bottom: 2px;
         list-style-type: none;
 
         display: flex;
@@ -242,9 +263,7 @@
     }
 
     &-item{
-        margin-right: 30px;
-        
-        
+        margin-right: 29px;  
     }
 
     &-link {
@@ -307,31 +326,44 @@
 .sort__item {
 
     width: 360px;
-    
+    margin-bottom: 46px;
+
+
     &-description {
         display: flex;
         justify-content: space-between;
 
         margin: 0;
-        margin-top: 35px;
-        margin-bottom: 50px;
+        margin-top: 29px;
+
     }
 
     &-name {
+        width: 255px;
+        
         font-family: Gilroy, serif;
         font-size: 18px;
+        line-height: 24px;
     }
 
     &-price {
         font-family: GilroyLight, serif;
         font-size: 16px;
+        line-height: 25px;
+
     }
+
+    &:nth-child(1n+3), &:nth-child(1n+4) {
+        margin-bottom: 35px;
+    }
+
 }
+
 
 .sort__pagination {
     margin: 0;
     margin-bottom: 77px;
-    padding: 25px 30px;
+    padding: 28px 30px 24px;
 
     list-style-type: none;
 
@@ -342,7 +374,7 @@
 
     &-link {
         font-family: Gilroy, serif;
-        font-size: 18px;
+        font-size: 16px;
         letter-spacing: 3px;
 
         color: #000000;
