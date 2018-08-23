@@ -14,15 +14,18 @@
             <!-- p в обертке лого почему-то выдает лишние неизменяемые без теговых стилей маргины, пришлось заменить на div -->
             <section class="header__main">
                 <div class="header__logo">
-                    <a class="header__logo_link" href="index.html">
-                        <h1 class="header__logo_text">Device</h1>
-                    </a>
+                    <h1 class="header__logo_text">
+                        <a class="header__logo_link" href="index.html">
+                            Device
+                        </a>
+                    </h1>
                 </div>
                 <div class="header__user-option">
                     <ul class="header__user-option_list user-option">
                         <li class="user-option__search">
                             <label for="mainSearch">
                                 <input class="user-option__searchbar" id="mainSearch" type="text" placeholder="Поиск по сайту">
+                                <button id="searchButton" class="user-option__search-button visually-hidden" type="button">Найти</button>
                                 <span class="visually-hidden">Поиск по сайту</span>
                             </label>
                         </li>
@@ -38,11 +41,15 @@
                     </ul>
                 </div>
                 <nav>
-                    <ul class="header__nav">
-                        <li class="header__nav_catalog"><a class="header__nav_link" href="catalog.html">Каталог товаров</a></li>
-                        <li class="header__nav_delivery"><a class="header__nav_link" href="">Доставка</a></li>
-                        <li class="header__nav_guarantee"><a class="header__nav_link" href="">Гарантия</a></li>
-                        <li class="header__nav_contacts"><a class="header__nav_link" href="">Контакты</a></li>
+                    <ul class="header__nav nav">
+                        <div class="nav__catalog">
+                            <li class="nav__catalog-item"><a class="nav__link" href="catalog.html">Каталог товаров</a>
+                            </li>
+                            <p class="nav__catalog-plus"></p>
+                        </div>     
+                        <li class="nav__delivery"><a class="nav__link" href="">Доставка</a></li>
+                        <li class="nav__guarantee"><a class="nav__link" href="">Гарантия</a></li>
+                        <li class="nav__contacts"><a class="nav__link" href="">Контакты</a></li>
                     </ul>
                 </nav>
 
@@ -264,5 +271,7 @@
             </div>
         </div>
     </footer>
+
+    <script src="js/catalog.js"></script>
 </body>
 </html>
