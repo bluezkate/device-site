@@ -408,6 +408,33 @@ body {
     display: block; }
   .filter__range {
     margin: 0; }
+    .filter__range-input {
+      -webkit-appearance: none;
+      width: 100%;
+      height: 2px;
+      border: none;
+      background-color: #dbdbdb; }
+      .filter__range-input::-webkit-slider-thumb {
+        -webkit-appearance: none;
+        border: 10px solid #ffffff;
+        -webkit-box-shadow: 0px 3px 10px -1px rgba(0, 0, 0, 0.75);
+                box-shadow: 0px 3px 10px -1px rgba(0, 0, 0, 0.75);
+        width: 2px;
+        height: 2px;
+        -webkit-border-radius: 10px;
+                border-radius: 10px;
+        cursor: pointer; }
+      .filter__range-input::-moz-range-track {
+        width: 100%;
+        border: none;
+        background-color: #dbdbdb; }
+      .filter__range-input::-moz-range-thumb {
+        border: 8px solid #ffffff;
+        box-shadow: 0px 3px 10px -1px rgba(0, 0, 0, 0.75);
+        width: 2px;
+        height: 2px;
+        border-radius: 10px;
+        cursor: pointer; }
   .filter__price, .filter__color, .filter__bluetooth {
     padding-bottom: 54px;
     border-top: 2px  solid #000000; }
