@@ -262,6 +262,7 @@
         text-decoration: none;
     }
 
+   
 
     &-1 {
 
@@ -277,6 +278,8 @@
             background-repeat: no-repeat;
             bottom: 80px;
             background-position: center center;
+
+
         }
 
     }
@@ -368,7 +371,14 @@
         } 
 
     }
+    
+    // &-1::before, &-2::before, &-3::before, &-4::before, &-5::before, &-6::before {
 
+    //     &:hover {
+    //         background-color: $brightYellow;
+    //     }
+        
+    // }
 }
 
 // Goods section end

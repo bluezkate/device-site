@@ -384,7 +384,12 @@ body {
       display: none; }
   .main__nav-link {
     text-decoration: none;
-    color: #cacaca; }
+    color: #000000;
+    opacity: 0.3; }
+    .main__nav-link:hover {
+      opacity: 0.6; }
+    .main__nav-link:focus {
+      opacity: 0.1; }
 
 .catalog-wrapper {
   display: -webkit-box;
@@ -448,6 +453,8 @@ body {
       padding-left: 40px;
       position: relative;
       cursor: pointer; }
+      .filter__checkbox-label:hover {
+        opacity: 0.6; }
   .filter__bluetooth {
     padding-bottom: 17px; }
   .filter__radio {
@@ -457,12 +464,23 @@ body {
       padding-left: 40px;
       position: relative;
       cursor: pointer; }
+      .filter__radio-label:hover {
+        opacity: 0.6; }
   .filter__show {
     margin: 0;
     padding: 12px 0;
     width: 200px;
     text-align: center;
-    background-color: #f0c52e; }
+    cursor: pointer;
+    -webkit-transition: all 0.2s ease-in;
+    -o-transition: all 0.2s ease-in;
+    transition: all 0.2s ease-in;
+    background: -webkit-gradient(linear, left bottom, left top, color-stop(40%, rgba(250, 250, 250, 0)), color-stop(40%, #f0c52e), color-stop(60%, #f0c52e), color-stop(60%, rgba(250, 250, 250, 0)));
+    background: -webkit-linear-gradient(bottom, rgba(250, 250, 250, 0) 40%, #f0c52e 40%, #f0c52e 60%, rgba(250, 250, 250, 0) 60%);
+    background: -o-linear-gradient(bottom, rgba(250, 250, 250, 0) 40%, #f0c52e 40%, #f0c52e 60%, rgba(250, 250, 250, 0) 60%);
+    background: linear-gradient(to top, rgba(250, 250, 250, 0) 40%, #f0c52e 40%, #f0c52e 60%, rgba(250, 250, 250, 0) 60%); }
+    .filter__show:hover {
+      background-color: #f0c52e; }
     .filter__show-link {
       font-family: Gilroy, serif;
       font-size: 18px;
@@ -555,11 +573,14 @@ body {
   .sort__top-item {
     margin-right: 29px; }
   .sort__top-link {
-    color: #bababa;
+    font-size: 14px;
     text-decoration: none;
-    font-size: 14px; }
+    color: #000000;
+    opacity: 0.3; }
     .sort__top-link:hover {
-      color: #000000; }
+      opacity: 0.6; }
+    .sort__top-link:focus {
+      opacity: 1; }
   .sort__top-pagination {
     margin: 0;
     padding: 0;
@@ -573,20 +594,23 @@ body {
         -ms-flex-align: center;
             align-items: center; }
   .sort__top-arrow {
-    margin-left: 20px;
-    opacity: 0.3;
-    cursor: pointer; }
-    .sort__top-arrow:first-child {
+    margin-left: 20px; }
+  .sort__top-link {
+    opacity: 0.2;
+    display: inline-block; }
+    .sort__top-link_up {
       width: 11px;
       height: 11px;
       background-image: url("/img/icon-up-dir.svg");
       background-repeat: no-repeat; }
-    .sort__top-arrow:last-child {
+    .sort__top-link_down {
       width: 11px;
       height: 11px;
       background-image: url("/img/icon-down-dir.svg");
       background-repeat: no-repeat; }
-    .sort__top-arrow:hover {
+    .sort__top-link:hover {
+      opacity: 0.4; }
+    .sort__top-link:focus {
       opacity: 1; }
 
 .sort__items {
@@ -605,6 +629,57 @@ body {
 .sort__item {
   width: 360px;
   margin-bottom: 46px; }
+  .sort__item-picture {
+    position: relative; }
+    .sort__item-picture:hover {
+      cursor: pointer; }
+  .sort__item-hover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: block;
+    background-color: rgba(250, 250, 250, 0.3); }
+  .sort__item-wrapper {
+    display: block;
+    margin: 170px 80px; }
+  .sort__item-button_cart {
+    width: 200px;
+    margin-bottom: 30px;
+    padding: 12px 0;
+    text-align: center;
+    border: none;
+    font-family: Gilroy, serif;
+    font-size: 18px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    cursor: pointer;
+    -webkit-transition: all 0.2s ease-in;
+    -o-transition: all 0.2s ease-in;
+    transition: all 0.2s ease-in;
+    background: -webkit-gradient(linear, left bottom, left top, color-stop(40%, rgba(250, 250, 250, 0)), color-stop(40%, #f0c52e), color-stop(60%, #f0c52e), color-stop(60%, rgba(250, 250, 250, 0)));
+    background: -webkit-linear-gradient(bottom, rgba(250, 250, 250, 0) 40%, #f0c52e 40%, #f0c52e 60%, rgba(250, 250, 250, 0) 60%);
+    background: -o-linear-gradient(bottom, rgba(250, 250, 250, 0) 40%, #f0c52e 40%, #f0c52e 60%, rgba(250, 250, 250, 0) 60%);
+    background: linear-gradient(to top, rgba(250, 250, 250, 0) 40%, #f0c52e 40%, #f0c52e 60%, rgba(250, 250, 250, 0) 60%); }
+    .sort__item-button_cart:hover {
+      background-color: #f0c52e; }
+  .sort__item-link {
+    color: #000000;
+    text-decoration: none;
+    font-size: 13px; }
+    .sort__item-link_compare {
+      display: inline-block;
+      margin: 0;
+      text-align: center;
+      border: none;
+      background-color: transparent;
+      width: 200px;
+      opacity: 0.5; }
+      .sort__item-link_compare:hover {
+        opacity: 1; }
+      .sort__item-link_compare:focus {
+        opacity: 0.2; }
   .sort__item-description {
     display: -webkit-box;
     display: -webkit-flex;
@@ -631,7 +706,7 @@ body {
 .sort__pagination {
   margin: 0;
   margin-bottom: 77px;
-  padding: 28px 30px 24px;
+  padding: 0;
   list-style-type: none;
   display: -webkit-box;
   display: -webkit-flex;
@@ -648,10 +723,25 @@ body {
     letter-spacing: 3px;
     color: #000000;
     text-decoration: none;
-    text-transform: uppercase;
-    opacity: 0.3; }
-    .sort__pagination-link:hover {
-      opacity: 1; }
+    text-transform: uppercase; }
+    .sort__pagination-link_letter:focus {
+      opacity: 0.3; }
+    .sort__pagination-link_digit {
+      opacity: 0.3; }
+      .sort__pagination-link_digit:hover {
+        opacity: 0.6; }
+      .sort__pagination-link_digit:focus {
+        opacity: 1; }
+  .sort__pagination-direction, .sort__pagination-numbers {
+    padding: 28px 30px 24px; }
+  .sort__pagination-direction {
+    -webkit-align-content: flex-end;
+        -ms-flex-line-pack: end;
+            align-content: flex-end;
+    opacity: 1;
+    cursor: pointer; }
+    .sort__pagination-direction:hover {
+      background-color: #d9d9d9; }
   .sort__pagination-numbers {
     width: 88px;
     display: -webkit-box;

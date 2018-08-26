@@ -135,7 +135,7 @@
                             </p>
                             <p class="filter__checkbox">
                                 <label class="filter__checkbox-label" for="colorPink">
-                                    <input class="filter__checkbox-input visually-hidden" id="colorPink" type="checkbox" name="filterColor" >
+                                    <input class="filter__checkbox-input visually-hidden" id="colorPink" type="checkbox" name="filterColor">
                                     <span class="checkbox-indication"></span>
                                     Розовый
                                 </label>
@@ -164,67 +164,114 @@
                             <a class="filter__show-link" href="">Показать</a>
                         </p>   
                     </form>
-                </section>
+                    </section>
 
-                <section class="sort">
-                    <div class="sort__top">
-                        <h4 class="sort__top-heading">Сортировка:</h4>
-                        <ul class="sort__top-type">
-                            <li class="sort__top-item"><a class="sort__top-link" href="">По цене</a></li>
-                            <li class="sort__top-item"><a class="sort__top-link" href="">По типу</a></li>
-                            <li class="sort__top-item"><a class="sort__top-link" href="">По популярности</a></li>  
-                        </ul>
-                        <ul class="sort__top-pagination">
-                            <li class="sort__top-arrow"><a class="sort__top-link" href=""><span class="visually-hidden">Назад</span></a></li>
-                            <li class="sort__top-arrow"><a class="sort__top-link" href=""><span class="visually-hidden">Вперед</span></a></li>
-                        </ul>
-                            
-                    </div>
+                    <section class="sort">
+                        <div class="sort__top">
+                            <h4 class="sort__top-heading">Сортировка:</h4>
+                            <ul class="sort__top-type">
+                                <li class="sort__top-item"><a class="sort__top-link" href="">По цене</a></li>
+                                <li class="sort__top-item"><a class="sort__top-link" href="">По типу</a></li>
+                                <li class="sort__top-item"><a class="sort__top-link" href="">По популярности</a></li>  
+                            </ul>
+                            <ul class="sort__top-pagination">
+                                <li class="sort__top-arrow "><a class="sort__top-link_up sort__top-link" href=""><span class="visually-hidden">Назад</span></a></li>
+                                <li class="sort__top-arrow "><a class="sort__top-link_down sort__top-link" href=""><span class="visually-hidden">Вперед</span></a></li>
+                            </ul>
+                                
+                        </div>
                    
-                    <div class="sort__items">
-                        <div class="sort__item">
-                            <img class="sort__item-img"  src="img/item_1.jpg" alt="">
-                            <p class="sort__item-description">
-                                <span class="sort__item-name">Любительская селфи-палка</span>
-                                <span class="sort__item-price">500 руб.</span>   
-                            </p>
-                        </div>
-                        <div class="sort__item">
-                            <img class="sort__item-img" src="img/item_2.jpg" alt="">
-                            <p class="sort__item-description">
-                                <span class="sort__item-name">Профессиональная селфи&#8209палка</span>
-                                <span class="sort__item-price">1 500 руб.</span>   
-                            </p>
-                        </div>
-                        <div class="sort__item">
-                            <img class="sort__item-img" src="img/item_3.jpg" alt="">
-                            <p class="sort__item-description">
-                                <span class="sort__item-name">Непотопляемая селфи-палка</span>
-                                <span class="sort__item-price">2 500 руб.</span>   
-                            </p>
-                        </div>
-                        <div class="sort__item">
-                            <img class="sort__item-img" src="img/item_4.jpg" alt="">
-                            <p class="sort__item-description">
-                                <span class="sort__item-name">Селфи-палка &#171;Следуй за мной&#187;</span>
-                                <span class="sort__item-price">4 900 руб.</span>   
-                            </p> 
-                        </div>
-                    </div>
-                    
-                    
-                    <ul class="sort__pagination">
-                        <li><a class="sort__pagination-link" href="">Назад</a></li>
-                        <div class="sort__pagination-numbers">
-                            <li><a class="sort__pagination-link" href="">1</a></li>
-                            <li><a class="sort__pagination-link" href="">2</a></li>
-                            <li> <a class="sort__pagination-link" href="">3</a></li>
+                        <div id="productsAll" class="sort__items">
+                            <div class="sort__item">
+                                <div class="sort__item-picture">
+                                    <img class="sort__item-img"  src="img/item_1.jpg" alt="">
+                                    <div class="sort__item-hover visually-hidden">
+                                        <div class="sort__item-wrapper">
+                                            <button class="sort__item-button_cart" type="button">В корзину</button>
+                                            <p class="sort__item-link_compare">
+                                                <a class="sort__item-link" href="">
+                                                    Добавить к сравнению
+                                                </a>
+                                            </p>
+                                        </div>   
+                                    </div>
+                                </div>
+                                <p class="sort__item-description">
+                                    <span class="sort__item-name">Любительская селфи-палка</span>
+                                    <span class="sort__item-price">500 руб.</span>   
+                                </p> 
+                            </div>
+                            <div class="sort__item">
+                                <div class="sort__item-picture">
+                                    <img class="sort__item-img"  src="img/item_2.jpg" alt="">
+                                    <div class="sort__item-hover visually-hidden">
+                                        <div class="sort__item-wrapper">
+                                            <button class="sort__item-button_cart" type="button">В корзину</button>
+                                            <p class="sort__item-link_compare">
+                                                <a class="sort__item-link" href="">
+                                                    Добавить к сравнению
+                                                </a>
+                                            </p>
+                                        </div>   
+                                    </div>
+                                </div>
+                                <p class="sort__item-description">
+                                    <span class="sort__item-name">Профессиональная селфи&#8209;палка</span>
+                                    <span class="sort__item-price">4 900 руб.</span>   
+                                </p> 
+                            </div>
+                            <div class="sort__item">
+                                <div class="sort__item-picture">
+                                    <img class="sort__item-img"  src="img/item_3.jpg" alt="">
+                                    <div class="sort__item-hover visually-hidden">
+                                        <div class="sort__item-wrapper">
+                                            <button class="sort__item-button_cart" type="button">В корзину</button>
+                                            <p class="sort__item-link_compare">
+                                                <a class="sort__item-link" href="">
+                                                    Добавить к сравнению
+                                                </a>
+                                            </p>
+                                        </div>   
+                                    </div>
+                                </div>
+                                <p class="sort__item-description">
+                                    <span class="sort__item-name">Непотопляемая селфи-палка</span>
+                                    <span class="sort__item-price">1 500 руб.</span>   
+                                </p> 
+                            </div>
+                            <div class="sort__item">
+                                <div class="sort__item-picture">
+                                    <img class="sort__item-img"  src="img/item_4.jpg" alt="">
+                                    <div class="sort__item-hover visually-hidden">
+                                        <div class="sort__item-wrapper">
+                                            <button class="sort__item-button_cart" type="button">В корзину</button>
+                                            <p class="sort__item-link_compare">
+                                                <a class="sort__item-link" href="">
+                                                    Добавить к сравнению
+                                                </a>
+                                            </p>
+                                        </div>   
+                                    </div>
+                                </div>
+                                <p class="sort__item-description">
+                                    <span class="sort__item-name">Селфи-палка &#171;Следуй за мной&#187;</span>
+                                    <span class="sort__item-price">4 900 руб.</span>   
+                                </p> 
+                            </div>
                         </div>
                         
-                        <li> <a class="sort__pagination-link" href="">Вперед</a></li>
-                    </ul>
-                
-                </section>
+                        
+                        <ul class="sort__pagination">
+                            <li class="sort__pagination-direction"><a class="sort__pagination-link sort__pagination-link_letter" href="">Назад</a></li>
+                            <div class="sort__pagination-numbers">
+                                <li><a class="sort__pagination-link sort__pagination-link_digit" href="">1</a></li>
+                                <li><a class="sort__pagination-link sort__pagination-link_digit" href="">2</a></li>
+                                <li><a class="sort__pagination-link sort__pagination-link_digit" href="">3</a></li>
+                            </div>      
+                            <li class="sort__pagination-direction"> <a class="sort__pagination-link sort__pagination-link_letter" href="">Вперед</a></li>
+                        </ul>
+                    
+                    </section>
                 </div>
                 
             </div>
