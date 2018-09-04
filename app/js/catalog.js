@@ -51,7 +51,7 @@ function hideHover (event) {
     let target = event.target;
 
     while (target != productsAll) {
-      if (target.className == 'sort__item-hover') {
+      if (target.className == 'item__hover') {
 
         target.parentNode.childNodes[3].classList.add('visually-hidden');
         return;
