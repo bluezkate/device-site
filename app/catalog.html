@@ -9,69 +9,68 @@
     <title>DEVICE</title>
 </head>
 <body>
-    <header class="header">
-        <div class="container">
-            <!-- p в обертке лого почему-то выдает лишние неизменяемые без теговых стилей маргины, пришлось заменить на div -->
-            <section class="header__main">
-                <div class="header__logo">
-                    <h1 class="header__logo_text">
-                        <a class="header__logo_link" href="index.html">
-                            Device
-                        </a>
-                    </h1>
-                </div>
-                <div class="header__user-option">
-                    <ul class="header__user-option_list user-option">
-                        <li class="user-option__search">
-                            <label for="mainSearch">
-                                <input class="user-option__searchbar" id="mainSearch" type="text" placeholder="Поиск по сайту">
-                                <button id="searchButton" class="user-option__search-button visually-hidden" type="button">Найти</button>
-                                <span class="visually-hidden">Поиск по сайту</span>
-                            </label>
-                        </li>
-                        <li class="user-option__login">
-                            <button class="user-option__login_button" type="button">Войти</button>
-                        </li>
-                        <li class="user-option__compare">
-                            <a class="user-option__compare_link" href="">Сравнить</a>
-                        </li>
-                        <li class="user-option__cart">
-                            <a class="user-option__cart_link" href="">Корзина</a
-                        </li>
-                    </ul>
-                </div>
-                <nav>
-                    <ul class="header__nav nav">
-                        <div class="nav__catalog">
-                            <li class="nav__catalog-item"><a class="nav__link" href="catalog.html">Каталог товаров</a>
-                            </li>
-                            <p class="nav__catalog-plus"></p>
-                        </div>     
-                        <li class="nav__delivery"><a class="nav__link" href="">Доставка</a></li>
-                        <li class="nav__guarantee"><a class="nav__link" href="">Гарантия</a></li>
-                        <li class="nav__contacts"><a class="nav__link" href="">Контакты</a></li>
-                    </ul>
-                </nav>
+    <header>
 
-                <div class="header__catalog catalog visually-hidden">
-                    <ul class="catalog__list">
-                        <div class="catalog__column">
-                            <li class="catalog__item"><a class="catalog__link" href="">Виртуальная реальность</a></li>
-                            <li class="catalog__item"><a  class="catalog__link" href="">Моноподы для селфи</a></li>
-                            <li class="catalog__item"><a class="catalog__link" href="">Экшн-камеры</a></li>
-                        </div>
-                        <div class="catalog__column">
-                            <li class="catalog__item"><a class="catalog__link" href="">Фитнес-браслеты</a></li>
-                            <li class="catalog__item"><a class="catalog__link" href="">Умные часы</a></li>
-                        </div>
-                        <div class="catalog__column">
-                            <li class="catalog__item"><a class="catalog__link" href="">Квадрокоптеры</a></li>
-                        </div>
-                        
-                    </ul>
-                </div>
-            </section>
-        
+        <div class="container header">
+
+            <h1 class="header__logo logo">
+                <a class="header__link logo__link" href="index.html">
+                    Device
+                </a>
+            </h1>
+
+            <div class="header__user-option user-option">
+                <ul class="user-option__menu">
+                    <li class="user-option__search">
+                        <label for="mainSearch">
+                            <input class="user-option__searchbar" id="mainSearch" type="text" placeholder="Поиск по сайту">
+                            <button id="searchButton" class="user-option__search-button visually-hidden" type="button">Найти</button>
+                            <span class="visually-hidden">Поиск по сайту</span>
+                        </label>
+                    </li>
+                    <li class="user-option__login">
+                        <button class="user-option__login-button" type="button">Войти</button>
+                    </li>
+                    <li class="user-option__compare">
+                        <a class="user-option__compare_link" href="">Сравнить</a>
+                    </li>
+                    <li class="user-option__cart">
+                        <a class="user-option__cart_link" href="">Корзина</a
+                    </li>
+                </ul>
+            </div>
+
+            <nav class="header__navigation navigation">
+                <ul class="navigation__list">
+                    <div class="navigation__catalog">
+                        <li class="navigation__catalog-item">
+                            <a class="navigation__link" href="catalog.html">Каталог товаров</a>
+                        </li>
+                        <p class="navigation__catalog-plus"></p>
+                    </div>     
+                    <li class="navigation__delivery"><a class="navigation__link" href="">Доставка</a></li>
+                    <li class="navigation__guarantee"><a class="navigation__link" href="">Гарантия</a></li>
+                    <li class="navigation__contacts"><a class="navigation__link" href="">Контакты</a></li>
+                </ul>
+            </nav>
+
+            <div class="header__catalog catalog visually-hidden">
+                <ul class="catalog__list">
+                    <div class="catalog__column">
+                        <li class="catalog__item"><a class="catalog__link" href="">Виртуальная реальность</a></li>
+                        <li class="catalog__item"><a  class="catalog__link" href="">Моноподы для селфи</a></li>
+                        <li class="catalog__item"><a class="catalog__link" href="">Экшн-камеры</a></li>
+                    </div>
+                    <div class="catalog__column">
+                        <li class="catalog__item"><a class="catalog__link" href="">Фитнес-браслеты</a></li>
+                        <li class="catalog__item"><a class="catalog__link" href="">Умные часы</a></li>
+                    </div>
+                    <div class="catalog__column">
+                        <li class="catalog__item"><a class="catalog__link" href="">Квадрокоптеры</a></li>
+                    </div>           
+                </ul>
+            </div>
+
         </div> 
     </header>
     <main>
@@ -277,47 +276,48 @@
             </div>
         </div>
     </main>
+       
     <footer class="footer">
-        <div class="container">
-            <div class="footer__row_1">
-                <p>
-                    <a class="footer__logo" href="index.html">
-                        <b class="footer__logo-text">Device</b>
-                    </a>
-                </p>
-                <div class="footer__user-option">
-                    <button class="footer__login" type="button"> <span class="footer__login-text">Войти</span> </button>
-                    <p class="footer__compare">
-                        <a class="footer__compare-link" href="#">
-                            <span class="footer__compare-text">Сравнить</span>
+            <div class="container">
+                <div class="footer__row_1">
+                    <p>
+                        <a class="footer__logo" href="index.html">
+                            <b class="footer__logo-text">Device</b>
                         </a>
                     </p>
-                    <p class="footer__cart">
-                        <a  class="footer__cart-link" href="#">
-                            <span class="footer__cart-text">Корзина</span>
-                        </a>
-                    </p>
+                    <div class="footer__user-option">
+                        <button class="footer__login" type="button"> <span class="footer__login-text">Войти</span> </button>
+                        <p class="footer__compare">
+                            <a class="footer__link footer__link_compare" href="#">
+                                <span class="footer__text">Сравнить</span>
+                            </a>
+                        </p>
+                        <p class="footer__cart">
+                            <a class="footer__link footer__link_cart" href="#">
+                                <span class="footer__text">Корзина</span>
+                            </a>
+                        </p>
+                    </div>
+                    
                 </div>
-                
+                <div class="footer__row_2">
+                    <p class="footer__adress">г. Москва, ул. Строителей, 15</p>
+                    <ul class="footer__services-short services-short">
+                        <li class="services-short__item"><a class="services-short__link" href="#">Доставка</a></li>
+                        <li class="services-short__item"><a class="services-short__link" href="#">Гарантия</a></li>
+                        <li class="services-short__item"><a class="services-short__link" href="#">Контакты</a></li>
+                    </ul>
+                    <p class="footer__phone">Тел.: +7 (495) 495-95-95</p>
+                </div>
+                <div class="footer__row_3">
+                    <ul class="footer__social social">
+                        <li class="social__item"><a class="social__link social__facebook" href="#"><span class="visually-hidden">Фейсбук</span></a></li>
+                        <li class="social__item"><a class="social__link social__instagram" href="#"><span class="visually-hidden">Инстаграм</span></a></li>
+                        <li class="social__item"><a class="social__link social__twitter" href="#"><span class="visually-hidden">Твиттер</span></a></li>
+                    </ul>
+                </div>
             </div>
-            <div class="footer__row_2">
-                <p class="footer__adress">г. Москва, ул. Строителей, 15</p>
-                <ul class="footer__services">
-                    <li class="footer__services-item"><a class="footer__services-link" href="#">Доставка</a></li>
-                    <li class="footer__services-item"><a class="footer__services-link" href="#">Гарантия</a></li>
-                    <li class="footer__services-item"><a class="footer__services-link" href="#">Контакты</a></li>
-                </ul>
-                <p class="footer__phone">Тел.: +7 (495) 495-95-95</p>
-            </div>
-            <div class="footer__row_3">
-                <ul class="footer__social social">
-                    <li class="social__item"><a class="social__link social__facebook" href="#"><span class="visually-hidden">Фейсбук</span></a></li>
-                    <li class="social__item"><a class="social__link social__instagram" href="#"><span class="visually-hidden">Инстаграм</span></a></li>
-                    <li class="social__item"><a class="social__link social__twitter" href="#"><span class="visually-hidden">Твиттер</span></a></li>
-                </ul>
-            </div>
-        </div>
-    </footer>
+        </footer>
 
     <script src="js/catalog.js"></script>
 </body>

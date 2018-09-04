@@ -1,0 +1,119 @@
+.contact-info__wrapper {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 67px;
+
+}
+
+.about {
+    width: 495px;
+    position: relative;
+
+    &::before {
+        content: '';
+        width: 80px;
+        height: 7px;
+        background-color: #000000;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+
+}
+
+.contacts {
+    width: 560px;
+    position: relative;
+
+    &::before {
+        content: '';
+        width: 80px;
+        height: 7px;
+        background-color: #000000;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+}
+
+.about__heading, .contacts__heading {
+    margin: 49px 0 40px 0;
+    padding: 0;
+
+    font-family: Gilroy, serif;
+    font-size: 47px;
+}
+
+.about__text, .contacts__text {
+    margin: 0;
+    margin-bottom: 30px;
+
+    line-height: 30px;
+    color: #464646;
+
+}
+
+.about__trade-list {
+    list-style-type: circle;
+    list-style: circle #e5e5e5;
+
+    line-height: 38px;
+
+    padding: 0;
+    padding-left: 20px;
+
+    margin-top: 65px;
+    margin-bottom: 55px;
+}
+
+.about__trade-item {
+    font-size: 18px;
+    color: #e5e5e5;
+}
+
+.about__trade-text {
+    font-family: Gilroy, serif;
+    font-size: 16px;
+    color: #000000;
+    padding-left: 15px;
+}
+
+.contacts__map {
+    margin-top: 10px;
+    margin-bottom: 65px;
+}
+
+.about__link, .contacts__button {
+
+    display: inline-block;
+
+    width: 260px;
+    padding: 10px 0;
+
+    color: #000000;
+    background: linear-gradient(to top, rgba(250,250,250, 0) 40%, $brightYellow 40%, $brightYellow 60%, rgba(250,250,250, 0) 60%);
+
+    font-family: Gilroy, serif;
+    font-size: 18px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    text-align: center;
+    text-decoration: none;
+    border: none;
+
+    transition: all 0.2s ease-in;
+
+    cursor: pointer;
+
+    &:hover {
+        background-color: $brightYellow;
+    }
+
+    &:focus {
+        background-color: $brightYellow;
+        opacity: 0.3;
+    }
+    
+}
+
+

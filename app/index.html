@@ -9,71 +9,72 @@
     <title>DEVICE</title>
 </head>
 <body>
-    <header class="header">
-        <div class="container">
-        <section class="header__main">
-                <div class="header__logo">
-                    <h1 class="header__logo_text">
-                        <a class="header__logo_link" href="index.html">
-                            Device
-                        </a>
-                    </h1>
-                </div>
-            <!-- p в обертке лого почему-то выдает лишние неизменяемые без теговых стилей маргины, пришлось заменить на section -->
-                <div class="header__user-option">
-                    <ul class="header__user-option_list user-option">
-                        <li class="user-option__search">
-                            <label for="mainSearch">
-                                <input class="user-option__searchbar" id="mainSearch" type="text" placeholder="Поиск по сайту">
-                                <button id="searchButton" class="user-option__search-button visually-hidden" type="button">Найти</button>
-                                <span class="visually-hidden">Поиск по сайту</span>
-                            </label>
-                        </li>
-                        <li class="user-option__login">
-                            <button class="user-option__login_button" type="button">Войти</button>
-                        </li>
-                        <li class="user-option__compare">
-                            <a class="user-option__compare_link" href="">Сравнить</a>
-                        </li>
-                        <li class="user-option__cart">
-                            <a class="user-option__cart_link" href="">Корзина</a
-                        </li>
-                    </ul>
-                </div>
-                <nav>
-                    <ul class="header__nav nav">
-                        <div class="nav__catalog">
-                            <li class="nav__catalog-item"><a class="nav__link" href="catalog.html">Каталог товаров</a>
-                            </li>
-                            <p class="nav__catalog-plus"></p>
-                        </div>     
-                        <li class="nav__delivery"><a class="nav__link" href="">Доставка</a></li>
-                        <li class="nav__guarantee"><a class="nav__link" href="">Гарантия</a></li>
-                        <li class="nav__contacts"><a class="nav__link" href="">Контакты</a></li>
-                    </ul>
-                </nav>
 
-                <div class="header__catalog catalog visually-hidden">
-                    <ul class="catalog__list">
-                        <div class="catalog__column">
-                            <li class="catalog__item"><a class="catalog__link" href="">Виртуальная реальность</a></li>
-                            <li class="catalog__item"><a  class="catalog__link" href="">Моноподы для селфи</a></li>
-                            <li class="catalog__item"><a class="catalog__link" href="">Экшн-камеры</a></li>
-                        </div>
-                        <div class="catalog__column">
-                            <li class="catalog__item"><a class="catalog__link" href="">Фитнес-браслеты</a></li>
-                            <li class="catalog__item"><a class="catalog__link" href="">Умные часы</a></li>
-                        </div>
-                        <div class="catalog__column">
-                            <li class="catalog__item"><a class="catalog__link" href="">Квадрокоптеры</a></li>
-                        </div>
-                        
-                    </ul>
-                </div>
+    <header>
 
-            </section>
-        
+        <div class="container header">
+
+            <h1 class="header__logo logo">
+                <a class="header__link logo__link" href="index.html">
+                    Device
+                </a>
+            </h1>
+
+            <div class="header__user-option user-option">
+                <ul class="user-option__menu">
+                    <li class="user-option__search">
+                        <label for="mainSearch">
+                            <input class="user-option__searchbar" id="mainSearch" type="text" placeholder="Поиск по сайту">
+                            <button id="searchButton" class="user-option__search-button visually-hidden" type="button">Найти</button>
+                            <span class="visually-hidden">Поиск по сайту</span>
+                        </label>
+                    </li>
+                    <li class="user-option__login">
+                        <button class="user-option__login-button" type="button">Войти</button>
+                    </li>
+                    <li class="user-option__compare">
+                        <a class="user-option__link user-option__link_compare" href="">Сравнить</a>
+                    </li>
+                    <li class="user-option__cart">
+                        <a class="user-option__link user-option__link_cart" href="">Корзина</a
+                    </li>
+                </ul>
+            </div>
+
+            <nav class="header__navigation navigation">
+                <ul class="navigation__list">
+                    <div class="navigation__catalog">
+                        <li class="navigation__catalog-item">
+                            <a class="navigation__link" href="catalog.html">Каталог товаров</a>
+                        </li>
+                        <span class="navigation__catalog-plus"></span>
+                    </div>     
+                    <li class="navigation__delivery"><a class="navigation__link" href="">Доставка</a></li>
+                    <li class="navigation__guarantee"><a class="navigation__link" href="">Гарантия</a></li>
+                    <li class="navigation__contacts"><a class="navigation__link" href="">Контакты</a></li>
+                </ul>
+            </nav>
+
+            <div class="header__catalog catalog visually-hidden">
+                <ul class="catalog__list">
+                    <div class="catalog__column">
+                        <li class="catalog__item"><a class="catalog__link" href="">Виртуальная реальность</a></li>
+                        <li class="catalog__item"><a  class="catalog__link" href="">Моноподы для селфи</a></li>
+                        <li class="catalog__item"><a class="catalog__link" href="">Экшн-камеры</a></li>
+                    </div>
+                    <div class="catalog__column">
+                        <li class="catalog__item"><a class="catalog__link" href="">Фитнес-браслеты</a></li>
+                        <li class="catalog__item"><a class="catalog__link" href="">Умные часы</a></li>
+                    </div>
+                    <div class="catalog__column">
+                        <li class="catalog__item"><a class="catalog__link" href="">Квадрокоптеры</a></li>
+                    </div>           
+                </ul>
+            </div>
+
         </div> 
+
+        
     </header>
 
     <main>
@@ -82,8 +83,8 @@
                 <h2 class="visually-hidden">Самые популярные товары</h2> 
                  
                 <div class="top-product__slider slider">
-                    <p class="slider__link"><a class="slider__link_text" href="">Подробнее</a></p>
-                    <div class="slider__buttons">
+                    <p class="slider__text"><a class="slider__link" href="">Подробнее</a></p>
+                    <div class="slider__switch">
                         <label for="slider__slide_1" class="slider__button">
                             <input id="slider__slide_1" class="slider__radio visually-hidden" type="radio" name="slider__radio" checked>
                             <span class="radio-indication"></span>
@@ -104,25 +105,25 @@
                             <div class="top-product__img">
                                 <img class="top-product__img_pic" src="img/slide_1.png" alt="Топ-товар">
                             </div>
-                            <div class="top-product__details details">
-                                <b class="details__lead">Делай селфи, <br>
+                            <div class="top-product__details product-details">
+                                <b class="product-details__lead">Делай селфи, <br>
                                 как Бен Стиллер!
                                 </b>
-                                <p class="details__ad">Самая длинная палка для селфи доступна в нашем магазине.
+                                <p class="product-details__ad">Самая длинная палка для селфи доступна в нашем магазине.
                                 Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.
                                 </p>
                                 
-                                <table class="details__char char">
+                                <table class="product-details__characteristics characteristics">
                                     <tbody>
                                         <tr> 
-                                            <td class="char__value">8,5 м</td>
-                                            <td class="char__value">5 кг</td>
-                                            <td class="char__value">Карбон</td>
+                                            <td class="characteristics__value">8,5 м</td>
+                                            <td class="characteristics__value">5 кг</td>
+                                            <td class="characteristics__value">Карбон</td>
                                         </tr>
                                         <tr>
-                                            <th class="char__head">Длина палки</th>
-                                            <th class="char__head">Вес палки</th>
-                                            <th class="char__head">Материал</th>
+                                            <th class="characteristics__head">Длина палки</th>
+                                            <th class="characteristics__head">Вес палки</th>
+                                            <th class="characteristics__head">Материал</th>
                                         </tr>  
                                     </tbody>
                                 </table>
@@ -133,19 +134,19 @@
                                 <img class="top-product__img_pic" src="img/slide_2.png" alt="Топ-товар">
                             </div>
                         
-                            <div class="top-product__details details">
-                                <b class="details__lead">Худеем <br>
+                            <div class="top-product__details product-details">
+                                <b class="product-details__lead">Худеем <br>
                                 правильно!
                                 </b>
-                                <p class="details__ad">Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.
+                                <p class="product-details__ad">Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.
                                 </p>
-                                <table class="details__char">
+                                <table class="product-details__characteristics characteristics">
                                     <tbody>
                                         <tr> 
-                                            <td class="char__value">48 часов</td>
+                                            <td class="characteristics__value">48 часов</td>
                                         </tr>
                                         <tr>
-                                            <th class="char__head">Без подзарядки</th>
+                                            <th class="characteristics__head">Без подзарядки</th>
                                         </tr>  
                                     </tbody>
                                 </table>
@@ -155,21 +156,21 @@
                             <div class="top-product__img">
                                 <img class="top-product__img_pic" src="img/slide_3.png" alt="Топ-товар">
                             </div>
-                            <div class="top-product__details details">
-                                <b class="details__lead">
+                            <div class="top-product__details product-details">
+                                <b class="product-details__lead">
                                     Порхает как бабочка, жалит как пчела!
                                 </b>
-                                <p class="details__ad">Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.
+                                <p class="product-details__ad">Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.
                                 </p>
-                                <table class="details__char">
+                                <table class="product-details__characteristics characteristics">
                                     <tbody>       
                                         <tr> 
-                                            <td class="char__value">800 м</td>
-                                            <td class="char__value">50 м</td>
+                                            <td class="characteristics__value">800 м</td>
+                                            <td class="characteristics__value">50 м</td>
                                         </tr>
                                         <tr>
-                                            <th class="char__head">Дальность полета</th>
-                                            <th class="char__head">Радиус поражения</th>
+                                            <th class="characteristics__head">Дальность полета</th>
+                                            <th class="characteristics__head">Радиуc поражения</th>
                                         </tr> 
                                     </tbody>
                                 </table>
@@ -182,10 +183,10 @@
             </div>
         </section>
 
-        <section>
+        <section class="goods-list">
             <div class="container">
                 <h2 class="visually-hidden">Категории товаров</h2>
-                <ul class="goods-list">
+                <ul class="goods-list__list">
                     <li class="goods-list__item">
                         <a class="goods-list__link goods-list-1" href="">Виртуальная реальность</a>
                     </li>
@@ -270,32 +271,33 @@
                 </div>
             </div>
         </section>
-        
-        <div class="container">
-            <div class="contact-info">
-                <section class="about">  
-                    <h2 class="contact-info__heading">О нас</h2>
-                    <p class="contact-info__text">Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.</p>
-                    <p class="contact-info__text">Мы можем доставить ваш товар в самые отдаленные точки России! DEVICE работает со многими транспортными компаниями:</p>
-                    <ul class="contact-info__trade-list">
-                        <li class="contact-info__trade-item"><span class="contact-info__trade-text">Деловые Линии</span>
-                            </li>
-                        <li class="contact-info__trade-item"><span class="contact-info__trade-text">Автотрейдинг</span>
-                            </li>
-                        <li class="contact-info__trade-item"><span class="contact-info__trade-text">ЖелДорЭкспедиция</span>
-                            </li>
-                    </ul>
-                    <p><a class="contact-info__link" href="">Подробнее о нас</a></p>
-                </section>
-                <section class="contacts">
-                    <h2 class="contact-info__heading">Контакты</h2>
-                    <p class="contact-info__text">Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.</p>
-                    <img class="contact-info__map" src="img/map__mini.jpg" alt="Адрес на карте">
-                    <button class="contact-info__button" type="button">Напишите нам</button>
-                </section>
-            </div>
-        </div>
-            
+
+        <div class="contact-info">
+            <div class="container">
+                <div class="contact-info__wrapper">
+                    <section class="about">  
+                        <h2 class="about__heading">О нас</h2>
+                        <p class="about__text">Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.</p>
+                        <p class="about__text">Мы можем доставить ваш товар в самые отдаленные точки России! DEVICE работает со многими транспортными компаниями:</p>
+                        <ul class="about__trade-list">
+                            <li class="about__trade-item"><span class="about__trade-text">Деловые Линии</span>
+                                </li>
+                            <li class="about__trade-item"><span class="about__trade-text">Автотрейдинг</span>
+                                </li>
+                            <li class="about__trade-item"><span class="about__trade-text">ЖелДорЭкспедиция</span>
+                                </li>
+                        </ul>
+                        <p><a class="about__link" href="">Подробнее о нас</a></p>
+                    </section>
+                    <section class="contacts">
+                        <h2 class="contacts__heading">Контакты</h2>
+                        <p class="contacts__text">Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.</p>
+                        <img class="contacts__map" src="img/map__mini.jpg" alt="Адрес на карте">
+                        <button class="contacts__button" type="button">Напишите нам</button>
+                    </section>
+                </div>
+            </div>  
+        </div>      
     </main>
 
     <section class="modal">
@@ -335,13 +337,13 @@
                 <div class="footer__user-option">
                     <button class="footer__login" type="button"> <span class="footer__login-text">Войти</span> </button>
                     <p class="footer__compare">
-                        <a class="footer__compare-link" href="#">
-                            <span class="footer__compare-text">Сравнить</span>
+                        <a class="footer__link footer__link_compare" href="#">
+                            <span class="footer__text">Сравнить</span>
                         </a>
                     </p>
                     <p class="footer__cart">
-                        <a  class="footer__cart-link" href="#">
-                            <span class="footer__cart-text">Корзина</span>
+                        <a class="footer__link footer__link_cart" href="#">
+                            <span class="footer__text">Корзина</span>
                         </a>
                     </p>
                 </div>
@@ -349,10 +351,10 @@
             </div>
             <div class="footer__row_2">
                 <p class="footer__adress">г. Москва, ул. Строителей, 15</p>
-                <ul class="footer__services">
-                    <li class="footer__services-item"><a class="footer__services-link" href="#">Доставка</a></li>
-                    <li class="footer__services-item"><a class="footer__services-link" href="#">Гарантия</a></li>
-                    <li class="footer__services-item"><a class="footer__services-link" href="#">Контакты</a></li>
+                <ul class="footer__services-short services-short">
+                    <li class="services-short__item"><a class="services-short__link" href="#">Доставка</a></li>
+                    <li class="services-short__item"><a class="services-short__link" href="#">Гарантия</a></li>
+                    <li class="services-short__item"><a class="services-short__link" href="#">Контакты</a></li>
                 </ul>
                 <p class="footer__phone">Тел.: +7 (495) 495-95-95</p>
             </div>

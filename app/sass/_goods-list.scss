@@ -1,0 +1,126 @@
+.goods-list {
+    &-1 {
+        position: relative;
+
+        &::before {
+            content: '';
+            height: 160px;
+            width: 160px;
+            position: absolute;
+            background-color: $bleakYellow;
+            background-image: url('/img/popular-1.svg');
+            background-repeat: no-repeat;
+            bottom: 80px;
+            background-position: center center;
+        }
+    }
+
+    &-2 {
+        position: relative;
+
+        &::before {
+            content: '';
+            height: 160px;
+            width: 160px;
+            position: absolute;
+            background-color: $bleakYellow;
+            background-image: url('/img/popular-2.svg');
+            background-repeat: no-repeat;
+            bottom: 80px;
+            background-position: center 41px;
+        }
+    }
+
+    &-3 {
+        position: relative;
+
+        &::before {
+            content: '';
+            height: 160px;
+            width: 160px;
+            position: absolute;
+            background-color: $bleakYellow;
+            background-image: url('/img/popular-3.svg');
+            background-repeat: no-repeat;
+            bottom: 55px;
+            background-position: 50px center;
+        } 
+    }
+
+    &-4 {
+        position: relative;
+
+        &::before {
+            content: '';
+            height: 160px;
+            width: 160px;
+            position: absolute;
+            background-color: $bleakYellow;
+            background-image: url('/img/popular-4.svg');
+            background-repeat: no-repeat;
+            bottom: 55px;
+            background-position: 28px center;
+        } 
+    }
+
+
+    &-5 {
+        position: relative;
+
+        &::before {
+            content: '';
+            height: 160px;
+            width: 160px;
+            position: absolute;
+            background-color: $bleakYellow;
+            background-image: url('/img/popular-5.svg');
+            background-repeat: no-repeat;
+            bottom: 55px;
+            background-position: 55px center;
+        } 
+    }
+
+    &-6 {
+        position: relative;
+
+        &::before {
+            content: '';
+            height: 160px;
+            width: 160px;
+            position: absolute;
+            background-color: $bleakYellow;
+            background-image: url('/img/popular-6.svg');
+            background-repeat: no-repeat;
+            bottom: 55px;
+            background-position: 13px 48px;
+        } 
+    }
+}
+
+.goods-list__list {
+    margin: 0;
+    margin-bottom: 81px;
+    padding: 0;
+    padding-top: 186px;
+    list-style-type: none;
+
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.goods-list__item {
+    width: 160px; 
+}
+
+.goods-list__link {
+
+    font-family: Gilroy, serif;
+    font-size: 18px;
+    line-height: 24px;
+
+    color: #000000;
+    text-decoration: none;
+}
+
+

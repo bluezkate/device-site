@@ -1,0 +1,143 @@
+
+.services {
+    background-image: linear-gradient(to top, #e5e5e5 74%, rgba(255, 255, 255, 0) 74%, rgba(255, 255, 255, 0) 100%, #e5e5e5 100%);
+    padding-bottom: 70px; 
+    position: relative;
+    z-index: 10;
+}
+
+.services__main {
+    display: flex;
+    justify-content: space-between;
+}
+
+.services__list {
+    margin: 0;
+    padding: 80px 0 44px;
+
+    width: 285px;
+    box-sizing: border-box;
+    list-style-type: none;
+    border-right: 7px solid #000000;
+}
+
+.services__item {
+    margin: 0;
+    margin-bottom: 25px;
+
+    font-family: Gilroy, serif;
+    font-size: 18px;
+    text-decoration: line-through;
+}
+
+.services__button {
+    display: inline-block;
+    width: 160px;
+    padding: 10px;
+
+    background: linear-gradient(to top, rgba(250,250,250, 0) 40%, $brightYellow 40%, $brightYellow 60%, rgba(250,250,250, 0) 60%);
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 3px;
+    border: none;
+
+    transition: all 0.2s ease-in;
+
+    cursor: pointer;
+
+    &:hover {
+        background-color: $brightYellow;
+    }
+
+    &:focus {
+        background-color: $brightYellow;
+        opacity: 0.3;
+    }
+}
+
+.services__radio:checked + .services__button {
+    background-color: #000000;
+    color: $brightYellow;
+}
+
+
+.description {
+    width: 760px;
+    padding-top: 70px;
+    overflow: hidden;
+}
+
+.description__slide-list {
+    display: flex;
+    transition: all 1.1s ease;
+}
+
+.description__slide {
+    width: 430px;
+    padding-right: 340px;
+}
+
+.description__title {  
+    margin: 0;
+    
+    font-family: Gilroy, serif;
+    font-size: 47px;
+}
+
+.description__text {
+    margin: 0;
+    margin-top: 28px;
+
+    width: 430px;
+    line-height: 30px;
+    color: #464646;
+}
+
+
+.description__slide-1 {
+    position: relative;
+
+    &::after {
+        content: '';
+        background-image: url('/img/delivery.svg');
+        height: 164px;
+        width: 136px;
+
+        position: absolute;
+        top: 15px;
+        right: 75px;
+    }
+    
+}
+
+.description__slide-2 {
+    position: relative;
+
+    &::after {
+        content: '';
+        background-image: url('/img/warranty.svg');
+        height: 194px;
+        width: 171px;
+
+        position: absolute;
+        bottom: 20px;
+        right: 65px;
+    }
+    
+}
+
+.description__slide-3 {
+    position: relative;
+
+    &::after {
+        content: '';
+        background-image: url('/img/credit.svg');
+        height: 186px;
+        width: 156px;
+
+        position: absolute;
+        top: 15px;
+        right: 100px;
+    }
+    
+}

@@ -1,0 +1,224 @@
+.top-product {
+    position: relative;
+    margin-bottom: 112px;
+}
+
+.top-product__wrapper {
+    overflow: hidden;
+}
+
+.top-product__slide-list {
+    display: flex;
+    transition: all 1.1s ease;
+}
+
+.top-product__slide {
+    display: flex;
+    justify-content: space-between;
+    padding: 2px 61px 0 17px;
+    position: relative;
+    background: linear-gradient(to bottom, $bleakYellow 23%, rgba(255, 255, 255, 0) 23%, rgba(255, 255, 255, 0) 100%, $bleakYellow 100%);
+
+}
+
+.top-product__1 {
+    &::after {
+        content: '01';
+        font-family: Gilroy, serif;
+        font-size: 180px;
+        color: #ffffff;
+        position: absolute;
+        right: 58px;
+        top: -25px;
+    }
+}
+
+.top-product__2 {
+    &::after {
+        content: '02';
+        font-family: Gilroy, serif;
+        font-size: 180px;
+        color: #ffffff;
+        position: absolute;
+        right: 65px;
+        top: -25px;
+    }
+}
+
+.top-product__3 {
+    &::after {
+        content: '03';
+        font-family: Gilroy, serif;
+        font-size: 180px;
+        color: #ffffff;
+        position: absolute;
+        right: 65px;
+        top: -25px;
+        z-index: 0;
+    }
+}
+
+// Absolutely positioned slider switcher
+.slider{
+    width: 485px;
+    padding-right: 15px;
+
+    position: absolute;
+    right: 60px;
+    bottom: 133px;
+    z-index: 1;
+
+    display: flex;
+    justify-content: space-between;
+
+    &::before {
+        content: '';
+        width: 100px;
+        height: 7px;
+        background-color: #ffffff;
+        position: absolute;
+        right: 400px;
+        bottom: 310px;
+    }
+
+    // псевдоэлемент спозиционирован относительно переключателя тк это более логично
+    // но не получается спозиционировать его "ниже" самих слайдов
+}
+
+.slider__text {
+    margin: 0;
+    width: 220px;
+    text-align: center;
+    background: linear-gradient(to top, rgba(250,250,250, 0) 40%, $brightYellow 40%, $brightYellow 60%, rgba(250,250,250, 0) 60%);
+    padding: 10px 0;
+
+    transition: all 0.2s ease-in;
+
+    cursor: pointer;
+
+    &:hover {
+        background-color: $brightYellow;
+    }
+
+    &:focus {
+        background-color: $brightYellow;
+        opacity: 0.3;
+    }
+}
+
+.slider__link {
+    font-family: Gilroy, serif;
+    text-transform: uppercase;
+    font-size: 18px;
+    letter-spacing: 3px;
+
+    color: #000000;
+    text-decoration: none; 
+}
+
+.slider__switch {
+    display: flex;
+    list-style-type: none;
+    align-self: center;
+}
+
+.slider__button {
+    margin-right: 20px;
+    padding-left: 13px;
+
+    position: relative;
+    cursor: pointer;
+}
+
+
+// Switching standart radio to new
+.slider__radio + .radio-indication {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+
+    border: 1px solid #000000;
+    border-radius: 10px; 
+
+    top: -6px;
+}
+
+.slider__radio:focus + .radio-indication {
+    outline: thin dotted;
+    outline: 5px auto -webkit-focus-ring-color;
+}
+
+.slider__radio:checked + .radio-indication::before {
+    content: '';
+    position: absolute;
+    width: 2px;
+    height: 2px;
+    border: 1px solid #000000;
+    border-radius: 10px;
+    left: 3px;
+    top: 3px;
+}
+
+// Slider end
+
+
+
+.top-product__img {
+    width: 530px;
+    align-self: flex-start;
+    margin-right: 50px;
+
+    &_pic {
+        display: block;
+        margin: 0 auto;
+    }
+}
+
+.product-details {
+    width: 511px;
+    padding-top: 80px;
+}
+
+.product-details__lead {
+    display: block;
+    margin-bottom: 19px;
+
+    font-family: Gilroy, serif;
+    font-size: 47px;
+    line-height: 55px; 
+    letter-spacing: 1px; 
+    position: relative;
+    z-index: 2;
+}
+
+.product-details__ad {
+    width: 495px;
+
+    margin-bottom: 134px; 
+
+    color: #464646;
+    line-height: 30px;
+    font-weight: lighter;  
+}
+
+
+.characteristics {
+    width: 500px;
+    text-align: left;
+    display: inline-block;
+}
+
+.characteristics__head {
+    font-size: 13px;
+    font-weight: 300;
+
+    margin: 0;
+    padding: 0;
+    padding-right: 74px;
+    padding-top: 10px;    
+}
+
+.characteristics__value {
+    font-family: GilroyLight, serif;
+    font-size: 36px;
+}

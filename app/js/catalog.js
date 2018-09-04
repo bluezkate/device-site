@@ -1,6 +1,6 @@
 const searchBar = document.getElementById('mainSearch'),
       searchButton = document.getElementById('searchButton'),
-      catalogDropDown = document.querySelector('.nav__catalog-plus'),
+      catalogDropDown = document.querySelector('.navigation__catalog-plus'),
       catalogList = document.querySelector('.header__catalog');
 
 let productsAll = document.getElementById('productsAll');
