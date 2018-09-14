@@ -127,10 +127,13 @@
 }
 
 .user-option__login-button {
-    background-color: transparent;
-    border: 0;
-    cursor: pointer;
     position: relative;
+
+    background-color: transparent;
+    color: inherit;
+    border: 0;
+
+    cursor: pointer;
 
     &::before {
         content: '';

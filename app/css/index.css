@@ -137,10 +137,11 @@ body {
   margin-right: 230px; }
 
 .user-option__login-button {
+  position: relative;
   background-color: transparent;
+  color: inherit;
   border: 0;
-  cursor: pointer;
-  position: relative; }
+  cursor: pointer; }
   .user-option__login-button::before {
     content: '';
     width: 13px;

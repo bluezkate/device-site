@@ -137,18 +137,19 @@
 
 
 .item__button_cart {
-
     width: 200px;
     margin-bottom: 30px;
     padding: 12px 0;
     text-align: center;
-    border: none;
 
     font-family: Gilroy, serif;
     font-size: 18px;
+    color: inherit;
     text-transform: uppercase;
+    text-align: center;
     letter-spacing: 3px;
 
+    border: none;
     cursor: pointer;
     transition: all 0.2s ease-in;
 

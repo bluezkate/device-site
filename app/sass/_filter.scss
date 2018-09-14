@@ -3,13 +3,15 @@
 }
 
 .filter__type {
-    font-family: Gilroy, serif;
-    font-size: 18px;
+    display: block;
+
     padding: 0;
     padding-top: 12px;
     padding-bottom: 28px;
 
-    display: block;
+    font-family: Gilroy, serif;
+    font-size: 18px;
+    font-weight: normal; 
 }
 
 .filter__range {
@@ -117,13 +119,14 @@ border-top: 2px  solid #000000;
 }
 
 .filter__heading, .sort__top-heading {
-    font-family: Gilroy, serif;
-    font-size: 18px;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    padding: 25px 0;
     margin: 0;
     margin-bottom: 69px;
+
+    font-family: Gilroy, serif;
+    font-size: 18px;
+    font-weight: normal;
+    text-transform: uppercase;
+    letter-spacing: 2px;
 }
 
 
