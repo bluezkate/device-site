@@ -34,7 +34,8 @@ body {
   background: -webkit-linear-gradient(bottom, #f7e296 83%, rgba(255, 255, 255, 0) 83%, rgba(255, 255, 255, 0) 100%, #f7e296 100%);
   background: -o-linear-gradient(bottom, #f7e296 83%, rgba(255, 255, 255, 0) 83%, rgba(255, 255, 255, 0) 100%, #f7e296 100%);
   background: linear-gradient(to top, #f7e296 83%, rgba(255, 255, 255, 0) 83%, rgba(255, 255, 255, 0) 100%, #f7e296 100%);
-  padding-bottom: 7px; }
+  padding-bottom: 7px;
+  margin-bottom: -1px; }
 
 .header__logo {
   margin: 0;
@@ -195,7 +196,6 @@ body {
   text-decoration: none;
   text-transform: uppercase;
   font-family: Gilroy, serif;
-  font-weight: bold;
   font-size: 18px;
   letter-spacing: 0.2em; }
   .navigation__link:hover {
@@ -429,6 +429,7 @@ body {
 .product-details__lead {
   display: block;
   margin-bottom: 19px;
+  width: 580px;
   font-family: Gilroy, serif;
   font-size: 47px;
   line-height: 55px;
@@ -470,8 +471,10 @@ body {
     background-color: #f7e296;
     background-image: url("/img/popular-1.svg");
     background-repeat: no-repeat;
-    bottom: 80px;
+    top: -193px;
     background-position: center center; }
+  .goods-list-1:hover {
+    opacity: 0.6; }
 
 .goods-list-2 {
   position: relative; }
@@ -483,8 +486,10 @@ body {
     background-color: #f7e296;
     background-image: url("/img/popular-2.svg");
     background-repeat: no-repeat;
-    bottom: 80px;
+    top: -193px;
     background-position: center 41px; }
+  .goods-list-2:hover {
+    opacity: 0.6; }
 
 .goods-list-3 {
   position: relative; }
@@ -496,8 +501,10 @@ body {
     background-color: #f7e296;
     background-image: url("/img/popular-3.svg");
     background-repeat: no-repeat;
-    bottom: 55px;
+    top: -193px;
     background-position: 50px center; }
+  .goods-list-3:hover {
+    opacity: 0.6; }
 
 .goods-list-4 {
   position: relative; }
@@ -509,8 +516,10 @@ body {
     background-color: #f7e296;
     background-image: url("/img/popular-4.svg");
     background-repeat: no-repeat;
-    bottom: 55px;
+    top: -193px;
     background-position: 28px center; }
+  .goods-list-4:hover {
+    opacity: 0.6; }
 
 .goods-list-5 {
   position: relative; }
@@ -522,8 +531,10 @@ body {
     background-color: #f7e296;
     background-image: url("/img/popular-5.svg");
     background-repeat: no-repeat;
-    bottom: 55px;
+    top: -193px;
     background-position: 55px center; }
+  .goods-list-5:hover {
+    opacity: 0.6; }
 
 .goods-list-6 {
   position: relative; }
@@ -535,8 +546,10 @@ body {
     background-color: #f7e296;
     background-image: url("/img/popular-6.svg");
     background-repeat: no-repeat;
-    bottom: 55px;
+    top: -193px;
     background-position: 13px 48px; }
+  .goods-list-6:hover {
+    opacity: 0.6; }
 
 .goods-list__list {
   margin: 0;

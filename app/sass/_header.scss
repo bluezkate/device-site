@@ -1,6 +1,8 @@
 .header {
     background: linear-gradient(to top, $bleakYellow 83%, rgba(255, 255, 255, 0) 83%, rgba(255, 255, 255, 0) 100%, $bleakYellow 100%);
     padding-bottom: 7px;
+
+    margin-bottom: -1px;
 }
 
 .header__logo {
@@ -208,7 +210,6 @@
     text-decoration: none;
     text-transform: uppercase;
     font-family: Gilroy, serif;
-    font-weight: bold;
     font-size: 18px;
     letter-spacing: 0.2em;
 
